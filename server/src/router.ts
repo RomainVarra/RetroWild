@@ -1,4 +1,5 @@
 import express from "express";
+import movieActions from "./modules/movie/movieActions";
 
 const router = express.Router();
 
@@ -7,12 +8,8 @@ const router = express.Router();
 /* ************************************************************************* */
 
 // Define item-related routes
-import itemActions from "./modules/item/itemActions";
-
-router.get("/api/items", itemActions.browse);
-router.get("/api/items/:id", itemActions.read);
-router.post("/api/items", itemActions.add);
-
+router.get("/api/movie", movieActions.browse);
+router.get("/api/movie/:id", movieActions.read);
 /* ************************************************************************* */
 
 export default router;
