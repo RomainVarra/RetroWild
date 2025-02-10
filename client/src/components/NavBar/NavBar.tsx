@@ -16,6 +16,10 @@ function NavBar() {
     }
   };
 
+  const handleRegister = () => {
+    navigate("/register");
+  };
+
   const [menu, setMenu] = useState(false);
   const toggleMenu = () => setMenu(!menu);
 
@@ -37,7 +41,11 @@ function NavBar() {
           <button className={style.loginButton} type="button">
             Connection
           </button>
-          <button className={style.registerButton} type="button">
+          <button
+            onClick={handleRegister}
+            className={style.registerButton}
+            type="button"
+          >
             S'inscrire
           </button>
         </div>

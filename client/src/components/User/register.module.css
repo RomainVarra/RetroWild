@@ -1,0 +1,22 @@
+.formRegister {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pseudoLabel {
+  display: block;
+  color: #ff4d5a;
+  font-size: 1.2em;
+}
+.pseudoInput {
+  margin-top: 1em;
+  display: block;
+  font-size: 1.2em;
+  color: black;
+}
+
+.errorMessage {
+  color: red;
+}

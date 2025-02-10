@@ -127,6 +127,7 @@
     border-radius: 8px;
     border: solid 2px white;
     z-index: 4;
+    font-size: 1.6em;
   }
 
   .showMenu {

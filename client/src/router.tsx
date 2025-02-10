@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 
+import RegisterPage from "./pages/ClientPages/AuthPages/RegisterPage";
 import HomePage from "./pages/ClientPages/Homepage";
 import MovieDetails from "./pages/MovieDetails";
 
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
+      },
+      {
+        path: "/register",
+        element: <RegisterPage />,
       },
       {
         path: "/movie/:id",
