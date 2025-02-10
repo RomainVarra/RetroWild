@@ -1,3 +1,18 @@
+CREATE TABLE role (
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  label VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE user (
+  id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  pseudo VARCHAR(100) NOT NULL,
+  photo VARCHAR(255),
+  email VARCHAR(100) UNIQUE NOT NULL,
+  hashed_password VARCHAR(255) NOT NULL,
+  role_id INT NOT NULL,
+  FOREIGN KEY (role_id) REFERENCES role(id)
+);
+
 CREATE TABLE movies (
     id INT PRIMARY KEY AUTO_INCREMENT, 
     title VARCHAR(255) NOT NULL,       
@@ -9,10 +24,13 @@ CREATE TABLE movies (
     description TEXT,     
     poster_url VARCHAR(500), 
     video_url VARCHAR(500), 
-    imdb_rating DECIMAL(3,1) DEFAULT NULL
+    rating DECIMAL(3,1) DEFAULT NULL
 );
 
-INSERT INTO movies (title, release_year, director, genre, duration, language, description, poster_url, video_url, imdb_rating) 
+INSERT INTO role (label)
+VALUES ("Admin"), ("User"); 
+
+INSERT INTO movies (title, release_year, director, genre, duration, language, description, poster_url, video_url, rating) 
 VALUES
 (
     "Steamboat Willie",
