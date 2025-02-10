@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
 import { useParams } from "react-router-dom";
 import type { MovieType } from "../types/movie.type";
+import style from "./movieDetails.module.css";
 
 function MovieDetails() {
   const { id } = useParams();
@@ -22,12 +23,12 @@ function MovieDetails() {
 
       <p>Année de sortie: {movie?.release_year}</p>
       <p>Genre: {movie?.genre}</p>
-      <div>
+      <div className={style.player}>
         <ReactPlayer
           url={movie?.video_url}
           height="100%"
-          width="50%"
-          playing={true}
+          width="80%"
+          playing={false}
           controls
         />
       </div>
