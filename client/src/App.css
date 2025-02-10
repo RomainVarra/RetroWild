@@ -26,8 +26,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: white;
 }
 
+main {
+  font-family: "Rubik", sans-serif;
+  background-color: var(--secondary-color);
+}
 h1,
 h2 {
   font-family: "Exo2", sans-serif;
@@ -36,8 +41,4 @@ h2 {
 h3,
 h4 {
   font-family: "BarlowCondensed", sans-serif;
-}
-
-body {
-  font-family: "Rubik", sans-serif;
 }

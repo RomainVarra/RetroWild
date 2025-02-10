@@ -1,0 +1,144 @@
+.navBarStyle {
+  background: linear-gradient(to right, #1a1a2e 0%, #9a3747 70%, #ff4d5a 100%);
+  padding: 1em 1em;
+}
+
+.firstPartNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navLeftSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1em;
+}
+
+.mainTitle {
+  font-size: 3em;
+  padding-left: 1em;
+}
+
+.myLogo {
+  height: 8em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navLinkDesktop {
+  display: flex;
+  gap: 1.5em;
+  font-size: 1.4em;
+  padding-left: 6em;
+  list-style: none;
+}
+
+.navLinkDesktop a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navLinkDesktop a:hover {
+  color: #a5a3a3;
+}
+
+.desktopButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.loginButton,
+.registerButton {
+  background-color: var(--tertiary-color);
+  width: 8em;
+  height: 2em;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.4em;
+  cursor: pointer;
+}
+
+.loginButton:hover,
+.registerButton:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.burgerButton {
+  display: none;
+  flex-direction: column;
+  gap: 7px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.mobileNavLink li {
+  list-style: none;
+}
+
+.mobileNavLink a {
+  text-decoration: none;
+  color: white;
+}
+
+.burgerBar1,
+.burgerBar2,
+.burgerBar3 {
+  height: 5px;
+  width: 40px;
+  background-color: white;
+  border-radius: 10%;
+}
+
+@media (min-width: 992px) {
+  .mobileNavLink {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .burgerButton {
+    display: flex;
+    z-index: 3;
+  }
+
+  .mainTitle,
+  .navLinkDesktop,
+  .desktopButton {
+    display: none;
+  }
+
+  .navLink {
+    display: none;
+    flex-direction: column;
+    background: var(--secondary-color);
+    padding: 1em;
+    position: absolute;
+    top: 120px;
+    right: 30px;
+    width: 180px;
+    border-radius: 8px;
+    border: solid 2px white;
+    z-index: 4;
+  }
+
+  .showMenu {
+    display: flex;
+  }
+
+  .navLink li {
+    margin-bottom: 0.5em;
+  }
+
+  .navLink a {
+    color: white;
+    text-decoration: none;
+  }
+}
