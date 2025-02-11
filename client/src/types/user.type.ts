@@ -9,4 +9,5 @@ export type registerType = {
 export type loginType = {
   email: string;
   password: string;
+  userId: number;
 };

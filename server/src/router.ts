@@ -37,6 +37,11 @@ router.post(
 
 // Se connecter (Utilisateur)
 router.post("/api/login", verifieEmail, comparePassword, checkUser, login);
+
+// Mettre à jour le compte utilisateur
+
+router.get("/api/user/:id", userActions.readUserData);
+
 /* ************************************************************************* */
 
 export default router;

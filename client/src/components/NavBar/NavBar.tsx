@@ -1,10 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import logoRW from "../../assets/images/retrowildLogo.webp";
+import { useAuth } from "../../contexts/AuthContext";
+import type { registerType } from "../../types/user.type";
+import AccountLink from "./AccountLink";
 import style from "./navbar.module.css";
 
 function NavBar() {
   const navigate = useNavigate();
+  const { userId } = useAuth();
 
   const handleClick = () => {
     navigate("/");
@@ -27,6 +31,17 @@ function NavBar() {
   const [menu, setMenu] = useState(false);
   const toggleMenu = () => setMenu(!menu);
 
+  const [userAccount, setUserAccount] = useState<registerType | null>(null);
+
+  useEffect(() => {
+    if (userId) {
+      fetch(`${import.meta.env.VITE_API_URL}/api/user/${userId}`)
+        .then((response) => response.json())
+        .then((data) => setUserAccount(data))
+        .catch((error) => console.error(error));
+    }
+  }, [userId]);
+
   return (
     <nav className={style.navBarStyle}>
       <section className={style.firstPartNav}>
@@ -40,23 +55,26 @@ function NavBar() {
           />
           <h1 className={style.mainTitle}>RetroWild</h1>
         </div>
-
-        <div className={style.desktopButton}>
-          <button
-            className={style.loginButton}
-            type="button"
-            onClick={handleLogin}
-          >
-            Connexion
-          </button>
-          <button
-            onClick={handleRegister}
-            className={style.registerButton}
-            type="button"
-          >
-            S'inscrire
-          </button>
-        </div>
+        {userAccount ? (
+          <AccountLink />
+        ) : (
+          <div className={style.desktopButton}>
+            <button
+              className={style.loginButton}
+              type="button"
+              onClick={handleLogin}
+            >
+              Connexion
+            </button>
+            <button
+              onClick={handleRegister}
+              className={style.registerButton}
+              type="button"
+            >
+              S'inscrire
+            </button>
+          </div>
+        )}
 
         <button
           type="button"
@@ -91,16 +109,22 @@ function NavBar() {
               Tops
             </NavLink>
           </li>
-          <li>
-            <NavLink to={"/login"} onClick={() => setMenu(false)}>
-              Se connecter
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={"/register"} onClick={() => setMenu(false)}>
-              S'inscrire
-            </NavLink>
-          </li>
+          {userAccount ? (
+            <NavLink to={"/account"}>Compte</NavLink>
+          ) : (
+            <>
+              <li>
+                <NavLink to={"/login"} onClick={() => setMenu(false)}>
+                  Se connecter
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to={"/register"} onClick={() => setMenu(false)}>
+                  S'inscrire
+                </NavLink>
+              </li>
+            </>
+          )}
         </ul>
       </section>
 

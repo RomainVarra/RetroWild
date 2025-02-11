@@ -37,6 +37,17 @@ class UserRepository {
 
     return rows[0];
   }
+
+  async read(id: number) {
+    const [rows] = await databaseClient.query<Rows>(
+      `
+      SELECT * FROM user WHERE id = ?
+      `,
+      [id],
+    );
+
+    return rows[0] as UserType;
+  }
 }
 
 export default new UserRepository();

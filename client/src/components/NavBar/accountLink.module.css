@@ -1,0 +1,46 @@
+.userSection {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2em;
+}
+
+.userPicture {
+  width: 5em;
+  border-radius: 50%;
+}
+
+.pictureAndLinkSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pseudoName {
+  font-size: 1.5em;
+  padding-right: 3em;
+  color: var(--secondary-color);
+}
+
+.linkAccount {
+  background-color: var(--tertiary-color);
+  width: 8em;
+  height: 1.7em;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.4em;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.linkAccount:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .userSection {
+    display: none;
+  }
+}
