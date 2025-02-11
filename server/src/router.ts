@@ -5,6 +5,7 @@ import { checkUser } from "./middlewares/checkRole.middleware";
 import { checkEmail, verifieEmail } from "./middlewares/email.middleware";
 import { upload } from "./middlewares/multer.middleware";
 import { userRole } from "./middlewares/register.middleware";
+import { login } from "./modules/movie/Auth/authActions";
 import movieActions from "./modules/movie/movieActions";
 import userActions from "./modules/movie/user/userActions";
 
@@ -35,7 +36,7 @@ router.post(
 );
 
 // Se connecter (Utilisateur)
-router.post("/api/login", verifieEmail, comparePassword, checkUser);
+router.post("/api/login", verifieEmail, comparePassword, checkUser, login);
 /* ************************************************************************* */
 
 export default router;
