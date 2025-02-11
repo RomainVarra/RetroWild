@@ -27,6 +27,8 @@
 
 .errorMessage {
   color: red;
+  font-size: 0.9em;
+  display: block;
 }
 
 .submitButton {
