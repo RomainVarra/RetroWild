@@ -1,0 +1,19 @@
+.accountSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.accountTitle {
+  position: relative;
+  text-align: center;
+  font-size: 2.5em;
+  margin: 1em 0;
+  color: var(--primary-color);
+}
+
+.accountPicture {
+  align-content: center;
+  justify-items: center;
+  width: 10em;
+}
