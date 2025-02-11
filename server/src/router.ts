@@ -1,6 +1,8 @@
 import path from "node:path";
 import express from "express";
-import { hashPassword } from "./middlewares/argon.middleware";
+import { comparePassword, hashPassword } from "./middlewares/argon.middleware";
+import { checkUser } from "./middlewares/checkRole.middleware";
+import { checkEmail, verifieEmail } from "./middlewares/email.middleware";
 import { upload } from "./middlewares/multer.middleware";
 import { userRole } from "./middlewares/register.middleware";
 import movieActions from "./modules/movie/movieActions";
@@ -16,20 +18,24 @@ const router = express.Router();
 router.get("/api/movie", movieActions.browse);
 router.get("/api/movie/:id", movieActions.read);
 
-// Enregistrer un nouvel utilisateur
-
+// Le chemin pour multer
 router.use(
   "/uploads",
   express.static(path.join(__dirname, "/middlewares/uploads")),
 );
 
+// Enregistrer un nouvel utilisateur
 router.post(
   "/api/user/register",
   upload,
   hashPassword,
+  checkEmail,
   userRole,
   userActions.add,
 );
+
+// Se connecter (Utilisateur)
+router.post("/api/login", verifieEmail, comparePassword, checkUser);
 /* ************************************************************************* */
 
 export default router;

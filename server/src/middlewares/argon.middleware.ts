@@ -22,11 +22,11 @@ export const hashPassword: RequestHandler = async (req, res, next) => {
 
 export const comparePassword: RequestHandler = async (req, res, next) => {
   try {
-    const { password, dbpassword } = req.body;
-    const verifiedPassword = await argon2.verify(dbpassword, password);
+    const { password, hashed_password } = req.body;
+    const verifiedPassword = await argon2.verify(hashed_password, password);
 
     if (!verifiedPassword) {
-      req.body.dbpassword = undefined;
+      req.body.hashed_password = undefined;
       res.sendStatus(403).json({
         message: "Le couple email/mot de passe ne correspond pas !",
       });
