@@ -3,6 +3,7 @@ import App from "./App";
 
 import RegisterPage from "./pages/ClientPages/AuthPages/RegisterPage";
 import HomePage from "./pages/ClientPages/Homepage";
+import AccountPage from "./pages/ClientPages/User/AccountPage";
 import MovieDetails from "./pages/MovieDetails";
 
 const router = createBrowserRouter([
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <RegisterPage />,
+      },
+      {
+        path: "/account",
+        element: <AccountPage />,
       },
       {
         path: "/movie/:id",

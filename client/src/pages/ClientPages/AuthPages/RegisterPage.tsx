@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import Register from "../../../components/User/Register";
 import type { registerType } from "../../../types/user.type";
 import style from "./register.module.css";
-import { toast } from "react-toastify";
 
 function RegisterPage() {
   const navigate = useNavigate();
@@ -10,7 +10,6 @@ function RegisterPage() {
   const handleUserFormSubmit = async (data: registerType) => {
     try {
       const formData = new FormData();
-      console.log("data", data);
 
       if (data.photo && data.photo.length > 0) {
         formData.append("photo", data.photo[0]);
@@ -24,16 +23,14 @@ function RegisterPage() {
         {
           method: "POST",
           body: formData,
-          //  credentials: "include",
         },
       );
 
-      console.log("formData", formData);
       if (response.status === 201) {
         toast.success("Les informations sont bien mis à jour");
-        //  setTimeout(() => {
-        //    navigate("/account/candidate");
-        //  }, 3000);
+        setTimeout(() => {
+          navigate("/account");
+        }, 3000);
       } else {
         toast.error("Une erreur s'est produite ! Veuillez réessayer");
       }

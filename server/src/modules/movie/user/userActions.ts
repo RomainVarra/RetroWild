@@ -1,17 +1,24 @@
 import type { RequestHandler } from "express";
+import UserRepository from "./UserRepository";
 
 const add: RequestHandler = async (req, res, next) => {
   try {
+    const { photo } = req.files as {
+      photo: Express.Multer.File[];
+    };
+    const photoPath = photo[0].filename;
+
     const newUser = {
       pseudo: req.body.pseudo,
       email: req.body.email,
-      password: req.body.password,
-      photo: req.body.photo,
+      hashed_password: req.body.hashed_password,
+      role_id: req.body.role_id,
+      photo: photoPath,
     };
 
-    console.log(newUser);
+    const insertId = await UserRepository.create(newUser);
 
-    res.status(201).json();
+    res.status(201).json({ insertId });
   } catch (err) {
     next(err);
   }
