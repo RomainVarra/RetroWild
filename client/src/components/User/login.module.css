@@ -1,56 +1,43 @@
-.formRegister {
+.loginForm {
+  padding-top: 3em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.sectionRegister {
+.loginSection {
   border: 3px solid #ff4d5a;
   padding: 1em 1em 1em 1em;
   border-radius: 10px;
 }
 
-.pseudoLabel,
-.photoLabel,
-.emailLabel,
-.passwordLabel,
-.confirmPasswordLabel {
+.loginEmail,
+.loginPassword {
   display: block;
   color: #ff4d5a;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
-.pseudoInput,
-.emailInput,
-.photoInput,
-.passwordInput,
-.confirmPasswordInput {
+.inputEmail,
+.inputPassword {
   margin: 1em 0;
   display: block;
-  font-size: 1em;
+  font-size: 1.3em;
   color: black;
 }
-
-.errorMessage {
-  color: red;
-  font-size: 0.9em;
-  display: block;
-}
-
-.submitButton {
+.loginButton {
   margin-bottom: 5em;
   margin-top: 2em;
   color: black;
   border: none;
   background-color: var(--tertiary-color);
-  font-size: 1.2em;
+  font-size: 1.5em;
   width: 7em;
   height: 2em;
   border-radius: 10px;
   cursor: pointer;
 }
 
-.submitButton:hover {
+.loginButton:hover {
   background-color: var(--primary-color);
   color: white;
 }

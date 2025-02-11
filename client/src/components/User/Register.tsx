@@ -16,7 +16,7 @@ function Register({ onSubmit }: UserFormRegisterType) {
 
   return (
     <form className={style.formRegister} onSubmit={handleSubmit(onSubmit)}>
-      <section className={style.pseudo}>
+      <section className={style.sectionRegister}>
         <label htmlFor="pseudo" className={style.pseudoLabel}>
           Pseudo :
           <input

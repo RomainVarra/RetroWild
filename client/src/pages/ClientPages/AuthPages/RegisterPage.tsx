@@ -29,7 +29,7 @@ function RegisterPage() {
       if (response.status === 201) {
         toast.success("Les informations sont bien mis à jour");
         setTimeout(() => {
-          navigate("/account");
+          navigate("/login");
         }, 3000);
       } else {
         toast.error("Une erreur s'est produite ! Veuillez réessayer");
