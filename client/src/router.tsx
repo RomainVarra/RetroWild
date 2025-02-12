@@ -5,6 +5,7 @@ import LoginPage from "./pages/ClientPages/AuthPages/LoginPage";
 import RegisterPage from "./pages/ClientPages/AuthPages/RegisterPage";
 import HomePage from "./pages/ClientPages/Homepage";
 import AccountPage from "./pages/ClientPages/User/AccountPage";
+import RecommandationPage from "./pages/ClientPages/User/RecommandationPage";
 import MovieDetails from "./pages/MovieDetails";
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/account",
         element: <AccountPage />,
+      },
+      {
+        path: "/recommandation",
+        element: <RecommandationPage />,
       },
       {
         path: "/movie/:id",

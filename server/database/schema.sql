@@ -27,6 +27,15 @@ CREATE TABLE movies (
     rating DECIMAL(3,1) DEFAULT NULL
 );
 
+CREATE TABLE recommandation (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  what VARCHAR(100) NOT NULL,
+  who VARCHAR(100) NOT NULL,
+  why VARCHAR(255) NOT NULL,
+  user_id INT NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES user(id)
+)
+
 INSERT INTO role (label)
 VALUES ("Admin"), ("User"); 
 

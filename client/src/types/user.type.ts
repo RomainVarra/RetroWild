@@ -11,3 +11,9 @@ export type loginType = {
   password: string;
   userId: number;
 };
+
+export type recommandationType = {
+  what: string;
+  who: string;
+  why: string;
+};
