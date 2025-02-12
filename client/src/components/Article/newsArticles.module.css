@@ -39,6 +39,11 @@
   width: 20em;
   height: 8em;
   object-fit: cover;
+  cursor: pointer;
+}
+
+.firstArticlePicture:hover {
+  transform: scale(1.1);
 }
 
 .firstArticleTitle {
