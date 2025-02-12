@@ -54,6 +54,24 @@ class UserRepository {
 
     return rows as UserType[];
   }
+
+  async anonymizeUser(userId: number) {
+    await databaseClient.query(
+      `
+      UPDATE user 
+      SET 
+        pseudo = '###', 
+        email = CONCAT('###', id), 
+        photo = '###' 
+      WHERE id = ?`,
+      [userId],
+    );
+    const [rows] = await databaseClient.query<Rows>(
+      "SELECT id, pseudo, email, photo FROM user WHERE id = ?",
+      [userId],
+    );
+    return rows[0];
+  }
 }
 
 export default new UserRepository();

@@ -1,10 +1,12 @@
-.adminUserAddSection {
+.adminUserAddSection,
+.adminUserEditSection {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.adminUserAddTitle {
+.adminUserAddTitle,
+.adminUserEditTitle {
   color: var(--primary-color);
   font-size: 3em;
   margin-bottom: 2em;

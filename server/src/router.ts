@@ -76,4 +76,12 @@ router.post(
   userRole,
   userActions.add,
 );
+
+// Anonymiser un utilisateur
+router.put(
+  "/api/admin/account/user/:id",
+  verifyToken,
+  userActions.anonymizeUser,
+);
+
 export default router;

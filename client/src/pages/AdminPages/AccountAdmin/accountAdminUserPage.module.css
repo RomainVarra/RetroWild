@@ -64,9 +64,21 @@ td {
   font-size: 1em;
   width: 10em;
   height: 2em;
+  cursor: pointer;
 }
 
 .addButton:hover {
   background-color: var(--primary-color);
   color: black;
+}
+.buttonGoBack {
+  margin-bottom: 5em;
+  color: white;
+  border: none;
+  background-color: var(--secondary-color);
+  font-size: 1em;
+  width: 8em;
+  height: 2.5em;
+  border-radius: 10px;
+  cursor: pointer;
 }

@@ -9,6 +9,9 @@ function AccountAdminUserPage() {
   const handleUserAdd = () => {
     navigate("/admin/account/user/add");
   };
+  const handleGoBack = () => {
+    navigate("/admin/account");
+  };
 
   useEffect(() => {
     fetch(`${import.meta.env.VITE_API_URL}/api/admin/account/user`, {
@@ -20,6 +23,28 @@ function AccountAdminUserPage() {
         setUsers(data);
       });
   }, []);
+
+  const handleAnonymizeCandidate = async (userId: number) => {
+    const apiUrl = `${import.meta.env.VITE_API_URL}/api/admin/account/user/${userId}`;
+
+    const response = await fetch(apiUrl, {
+      method: "PUT",
+      credentials: "include",
+    });
+
+    if (response.ok) {
+      const anonymizedCandidate = await response.json();
+      setUsers(
+        users.map((user) => (user.id === userId ? anonymizedCandidate : user)),
+      );
+    } else {
+      const errorDetail = await response.text();
+      console.error(
+        "Erreur lors de l'anonymisation du candidat :",
+        errorDetail,
+      );
+    }
+  };
   return (
     <section className={style.sectionUserAdmin}>
       <h1 className={style.titleUserAdmin}>Liste des utilisateurs</h1>
@@ -30,7 +55,6 @@ function AccountAdminUserPage() {
             <th>Pseudo</th>
             <th>Photo</th>
             <th>Email</th>
-            <th>Modifier</th>
             <th>Supprimer</th>
           </tr>
         </thead>
@@ -42,12 +66,11 @@ function AccountAdminUserPage() {
               <td>{user.photo}</td>
               <td>{user.email}</td>
               <td>
-                <button type="button" className={style.editButton}>
-                  Modifier
-                </button>
-              </td>
-              <td>
-                <button type="button" className={style.deleteButton}>
+                <button
+                  type="button"
+                  className={style.deleteButton}
+                  onClick={() => handleAnonymizeCandidate(user.id)}
+                >
                   Supprimer
                 </button>
               </td>
@@ -57,6 +80,13 @@ function AccountAdminUserPage() {
       </table>
       <button type="button" className={style.addButton} onClick={handleUserAdd}>
         Ajouter un utilisateur
+      </button>
+      <button
+        type="button"
+        onClick={handleGoBack}
+        className={style.buttonGoBack}
+      >
+        Revenir à mon compte
       </button>
     </section>
   );
