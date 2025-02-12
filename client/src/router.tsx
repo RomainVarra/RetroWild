@@ -8,6 +8,7 @@ import AccountAdminUserPage from "./pages/AdminPages/AccountAdmin/AccountAdminUs
 import LoginAdminPage from "./pages/AdminPages/LoginAdmin/LoginAdminPage";
 import LoginPage from "./pages/ClientPages/AuthPages/LoginPage";
 import RegisterPage from "./pages/ClientPages/AuthPages/RegisterPage";
+import ErrorPage from "./pages/ClientPages/ErrorPage/ErrorPage";
 import HomePage from "./pages/ClientPages/Homepage";
 import AccountPage from "./pages/ClientPages/User/AccountPage";
 import RecommandationPage from "./pages/ClientPages/User/RecommandationPage";
@@ -48,7 +49,7 @@ const router = createBrowserRouter([
       },
       {
         path: "*",
-        element: <h1>Error 404</h1>,
+        element: <ErrorPage />,
       },
     ],
   },

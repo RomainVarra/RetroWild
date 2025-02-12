@@ -1,0 +1,45 @@
+.errorPage {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+}
+.Title {
+  text-align: center;
+  font-size: 3em;
+  margin: 1em 0 2em 0;
+}
+
+.errorSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.errorText {
+  font-size: 2em;
+  text-align: center;
+}
+
+.errorImg {
+  max-width: 90%;
+}
+
+.errorBtn {
+  background-color: var(--tertiary-color);
+  width: 8em;
+  height: 1.7em;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.4em;
+  cursor: pointer;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+.errorBtn:hover {
+  background-color: var(--primary-color);
+  color: black;
+}
