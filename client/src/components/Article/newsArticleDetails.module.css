@@ -1,0 +1,52 @@
+.articleSection {
+  padding-bottom: 3em;
+}
+.articleStart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.articleTitle {
+  position: relative;
+  font-size: 2em;
+  padding: 1em 0 1em 0;
+  text-align: center;
+}
+
+.articleAuthor,
+.articlePublished {
+  font-style: italic;
+  text-align: center;
+}
+
+.articlePicture {
+  width: 30em;
+  max-width: 100%;
+  margin-bottom: 3em;
+}
+
+.articleFirstSectionTitle,
+.articleSecondSectionTitle {
+  color: var(--primary-color);
+  padding-left: 1em;
+}
+.articleFirstSection,
+.articleSecondSection {
+  padding: 2em 3em;
+}
+.goBackButton {
+  background-color: #f8e16c;
+  width: 11em;
+  height: 2.2em;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-left: 3em;
+}
+.goBackButton:hover {
+  background-color: var(--primary-color);
+  color: black;
+}

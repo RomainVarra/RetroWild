@@ -1,0 +1,82 @@
+.newArticleTitle {
+  font-size: 2em;
+  padding: 0 0 2em 2em;
+  position: relative;
+}
+
+.newArticleTitle::before {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #ff4d5a;
+  width: 12em;
+  top: 3rem;
+}
+
+.newArticleSection {
+  padding: 0 4em 4em 4em;
+  font-size: 1.3em;
+}
+.firstArticleSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.cardArticle {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  min-height: 100%;
+  padding: 1em;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.firstArticlePicture {
+  width: 20em;
+  height: 8em;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.firstArticlePicture:hover {
+  transform: scale(1.1);
+}
+
+.firstArticleTitle {
+  font-size: 1em;
+}
+
+.articleLink {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2em;
+  padding-bottom: 3em;
+}
+.linkToAllArticles {
+  background-color: #f8e16c;
+  width: 11em;
+  height: 2.2em;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.linkToAllArticles:hover {
+  background-color: var(--primary-color);
+  color: black;
+}
+
+@media (max-width: 470px) {
+  .newArticleTitle::before {
+    display: none;
+  }
+  .newArticleTitle {
+    color: var(--primary-color);
+  }
+}

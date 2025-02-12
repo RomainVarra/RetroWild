@@ -36,6 +36,19 @@ CREATE TABLE recommandation (
   FOREIGN KEY (user_id) REFERENCES user(id)
 );
 
+CREATE TABLE article (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    article_title VARCHAR(255) NOT NULL,
+    author VARCHAR(100) NOT NULL,
+    published_date DATE NOT NULL,
+    picture_article VARCHAR(255),
+    first_title_section VARCHAR(255),
+    first_section TEXT,
+    second_title_section VARCHAR(255),
+    second_section TEXT
+);
+
+
 INSERT INTO role (label)
 VALUES ("Admin"), ("User"); 
 
