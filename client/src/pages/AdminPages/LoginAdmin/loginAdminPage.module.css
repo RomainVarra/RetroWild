@@ -1,0 +1,10 @@
+.adminLoginSection {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.adminTitle {
+  color: var(--primary-color);
+  font-size: 3em;
+}
