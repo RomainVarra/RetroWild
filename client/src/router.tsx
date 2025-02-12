@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 
+import LoginAdminPage from "./pages/AdminPages/LoginAdminPage";
 import LoginPage from "./pages/ClientPages/AuthPages/LoginPage";
 import RegisterPage from "./pages/ClientPages/AuthPages/RegisterPage";
 import HomePage from "./pages/ClientPages/Homepage";
@@ -48,7 +49,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/admin/login",
-        element: <h1>Se connecter</h1>,
+        element: <LoginAdminPage />,
       },
     ],
   },
