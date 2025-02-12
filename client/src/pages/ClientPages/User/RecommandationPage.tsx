@@ -1,10 +1,40 @@
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import Recommandation from "../../../components/User/Recommandation";
+import { useAuth } from "../../../contexts/AuthContext";
 import type { recommandationType } from "../../../types/user.type";
 import style from "./recommandationPage.module.css";
 
 function RecommandationPage() {
-  const handleRecommationSubmit = (data: recommandationType) => {
-    data;
+  const { userId } = useAuth();
+  const navigate = useNavigate();
+
+  const handleRecommationSubmit = async (data: recommandationType) => {
+    const userData = { ...data, user_id: userId };
+
+    try {
+      const updateCompany = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/recommandation`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(userData),
+          credentials: "include",
+        },
+      );
+      if (updateCompany.ok) {
+        toast.success("Votre recommandation a bien été soumise !");
+        setTimeout(() => {
+          navigate("/account");
+        }, 3000);
+      } else {
+        toast.error("Un problème est survenu ! Veuillez réessayer");
+      }
+    } catch (err) {
+      err;
+    }
   };
   return (
     <section className={style.recommandationSection}>

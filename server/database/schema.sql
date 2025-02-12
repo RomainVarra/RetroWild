@@ -34,7 +34,7 @@ CREATE TABLE recommandation (
   why VARCHAR(255) NOT NULL,
   user_id INT NOT NULL,
   FOREIGN KEY (user_id) REFERENCES user(id)
-)
+);
 
 INSERT INTO role (label)
 VALUES ("Admin"), ("User"); 
