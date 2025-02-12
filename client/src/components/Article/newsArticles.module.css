@@ -1,0 +1,42 @@
+.newArticleTitle {
+  font-size: 2em;
+  padding: 0 0 3em 2em;
+  position: relative;
+}
+
+.newArticleTitle::before {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #ff4d5a;
+  width: 12em;
+  top: 3rem;
+}
+
+.newArticleSection {
+  padding: 0 4em 4em 4em;
+  font-size: 1.3em;
+}
+.firstArticle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.firstArticlePicture {
+  width: 70vw;
+  margin: 2em 0 0.5em 0;
+  cursor: pointer;
+}
+
+.firstArticleTitle {
+  font-size: 1em;
+  color: var(--primary-color);
+}
+
+@media (max-width: 470px) {
+  .newArticleTitle::before {
+    display: none;
+  }
+  .newArticleTitle {
+    color: var(--primary-color);
+  }
+}

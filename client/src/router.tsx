@@ -2,6 +2,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 
 import AdminUserAdd from "./components/Admin/AdminUserAdd";
+import NewArticlesDetails from "./components/Article/NewsArticlesDetails";
 import AccountAdminPage from "./pages/AdminPages/AccountAdmin/AccountAdminPage";
 import AccountAdminUserPage from "./pages/AdminPages/AccountAdmin/AccountAdminUserPage";
 import LoginAdminPage from "./pages/AdminPages/LoginAdmin/LoginAdminPage";
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/recommandation",
         element: <RecommandationPage />,
+      },
+      {
+        path: "/newArticle/:id",
+        element: <NewArticlesDetails />,
       },
       {
         path: "/movie/:id",

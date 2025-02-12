@@ -26,6 +26,19 @@
   align-content: center;
   margin-bottom: 5em;
 }
+.whatIsRetroWildTitle {
+  color: var(--primary-color);
+  font-size: 2em;
+  margin-bottom: 3em;
+  padding: 0 1.5em;
+}
+.whatIsRetroWildSection {
+  padding: 0 4em 4em 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1.3em;
+}
 
 @media (max-width: 600px) {
   .mainTitle::before {

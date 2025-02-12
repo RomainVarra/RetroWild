@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="nP_22HQLWyZtwcQR0NrW" name="Page-1">
-        <mxGraphModel dx="763" dy="599" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="766" dy="599" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -25,7 +25,7 @@
                 <mxCell id="22" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.011;entryY=0.85;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="12" target="17" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="12" value="movie&lt;br&gt;&lt;br&gt;id&lt;br&gt;title&lt;br&gt;release_year&lt;br&gt;director&lt;br&gt;duration&lt;br&gt;description&lt;br&gt;viedo_url&lt;br&gt;death_link&lt;br&gt;poster_url&lt;br&gt;rating&lt;br&gt;genre_id" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                <mxCell id="12" value="movie&lt;br&gt;&lt;br&gt;id&lt;br&gt;movie_title&lt;br&gt;release_year&lt;br&gt;director&lt;br&gt;duration&lt;br&gt;description&lt;br&gt;viedo_url&lt;br&gt;death_link&lt;br&gt;poster_url&lt;br&gt;rating&lt;br&gt;genre_id" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
                     <mxGeometry x="330" y="420" width="200" height="200" as="geometry"/>
                 </mxCell>
                 <mxCell id="14" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="13" target="12" edge="1">
@@ -37,7 +37,7 @@
                 <mxCell id="21" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.58;entryY=1.037;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="15" target="19" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="article&lt;br&gt;&lt;br&gt;id&lt;br&gt;author&lt;br&gt;published_date&lt;br&gt;picture_article&lt;br&gt;part_one&lt;br&gt;part_two" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="15" value="article&lt;br&gt;&lt;br&gt;id&lt;br&gt;article_title&lt;br&gt;author&lt;br&gt;published_date&lt;br&gt;picture_article&lt;br&gt;first_title_section&lt;br&gt;first_section&lt;br&gt;second_title_section&lt;br&gt;second_section" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="40" y="430" width="120" height="180" as="geometry"/>
                 </mxCell>
                 <mxCell id="16" value="recommandation&lt;br&gt;&lt;br&gt;what&lt;br&gt;who&lt;br&gt;why&lt;br&gt;user_id" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
