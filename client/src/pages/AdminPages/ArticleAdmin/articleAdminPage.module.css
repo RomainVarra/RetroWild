@@ -1,0 +1,33 @@
+.adminArticleSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.adminArticleTitle {
+  color: var(--primary-color);
+  font-size: 4em;
+}
+
+.adminArticleCard {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5em;
+  gap: 7em;
+}
+
+.ArticleAll,
+.ArticleAdd {
+  color: var(--primary-color);
+  font-size: 3em;
+  border: 3px solid var(--primary-color);
+  padding: 1em 1em;
+  cursor: pointer;
+}
+
+.ArticleAll:hover,
+.ArticleAdd:hover {
+  color: black;
+  border-color: black;
+}
