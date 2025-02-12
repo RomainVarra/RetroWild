@@ -21,9 +21,9 @@ function NewsArticles() {
       <h3 className={style.newArticleTitle}>Les articles du moment</h3>
       <section className={style.newArticleSection}>
         <p>Notre selection d'articles pour vous.</p>
-        <article className={style.firstArticle}>
+        <article className={style.firstArticleSection}>
           {firstArticle.map((f) => (
-            <div key={f.id}>
+            <div className={style.cardArticle} key={f.id}>
               <img
                 className={style.firstArticlePicture}
                 src={f.picture_article}
@@ -35,6 +35,11 @@ function NewsArticles() {
             </div>
           ))}
         </article>
+      </section>
+      <section className={style.articleLink}>
+        <button className={style.linkToAllArticles} type="button">
+          Retrouver tout nos articles
+        </button>
       </section>
     </>
   );
