@@ -61,4 +61,8 @@ router.post(
   checkAdmin,
   login,
 );
+
+// Afficher la liste des utilisateurs
+
+router.get("/api/admin/account/user", verifyToken, userActions.browseUser);
 export default router;

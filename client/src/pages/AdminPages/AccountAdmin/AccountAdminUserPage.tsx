@@ -1,10 +1,20 @@
+import { useEffect, useState } from "react";
+import type { registerType } from "../../../types/user.type";
 import style from "./accountAdminUserPage.module.css";
 
 function AccountAdminUserPage() {
-  const users = [
-    { id: 1, pseudo: "JohnDoe", photo: "", email: "john@example.com" },
-    { id: 2, pseudo: "JaneDoe", photo: "", email: "jane@example.com" },
-  ];
+  const [users, setUsers] = useState<registerType[]>([]);
+
+  useEffect(() => {
+    fetch(`${import.meta.env.VITE_API_URL}/api/admin/account/user`, {
+      method: "GET",
+      credentials: "include",
+    })
+      .then((response) => response.json())
+      .then((data: registerType[]) => {
+        setUsers(data);
+      });
+  }, []);
   return (
     <section className={style.sectionUserAdmin}>
       <h1 className={style.titleUserAdmin}>Liste des utilisateurs</h1>

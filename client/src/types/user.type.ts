@@ -1,4 +1,5 @@
 export type registerType = {
+  id: number;
   pseudo: string;
   email: string;
   password: string;

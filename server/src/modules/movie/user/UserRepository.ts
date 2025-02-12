@@ -48,6 +48,12 @@ class UserRepository {
 
     return rows[0] as UserType;
   }
+
+  async readAll() {
+    const [rows] = await databaseClient.query<Rows>("select * from user");
+
+    return rows as UserType[];
+  }
 }
 
 export default new UserRepository();

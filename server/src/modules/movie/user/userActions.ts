@@ -39,4 +39,14 @@ const readUserData: RequestHandler = async (req, res, next) => {
   }
 };
 
-export default { add, readUserData };
+const browseUser: RequestHandler = async (req, res, next) => {
+  try {
+    const users = await UserRepository.readAll();
+
+    res.json(users);
+  } catch (err) {
+    next(err);
+  }
+};
+
+export default { add, readUserData, browseUser };
