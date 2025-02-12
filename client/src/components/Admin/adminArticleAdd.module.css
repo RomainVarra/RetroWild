@@ -1,0 +1,44 @@
+.titleLabel,
+.publishedDateLabel,
+.authorLabel,
+.pictureArticleLabel,
+.firstTitleSectionLabel {
+  display: block;
+  color: #ff4d5a;
+  font-size: 1.2em;
+}
+
+.titleInput,
+.publishedDateInput,
+.authorInput,
+.pictureArticleInput,
+.firstTitleSectionInput {
+  margin: 1em 0;
+  display: block;
+  font-size: 1em;
+  color: black;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.9em;
+  display: block;
+}
+
+.submitButton {
+  margin-bottom: 5em;
+  margin-top: 2em;
+  color: black;
+  border: none;
+  background-color: var(--tertiary-color);
+  font-size: 1.2em;
+  width: 7em;
+  height: 2em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: var(--primary-color);
+  color: white;
+}

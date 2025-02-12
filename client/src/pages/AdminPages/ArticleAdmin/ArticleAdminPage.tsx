@@ -4,10 +4,10 @@ import style from "./articleAdminPage.module.css";
 function ArticleAdminPage() {
   const navigate = useNavigate();
   const handleAddArticle = () => {
-    navigate("/admin/account/article/all");
+    navigate("/admin/account/article/add");
   };
   const handleShowArticle = () => {
-    navigate("/admin/account/article/add");
+    navigate("/admin/account/article/all");
   };
   const handleKeyUp = () => {
     "Press Enter";

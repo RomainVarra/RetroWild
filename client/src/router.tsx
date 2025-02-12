@@ -5,6 +5,7 @@ import AdminUserAdd from "./components/Admin/AdminUserAdd";
 import NewArticlesDetails from "./components/Article/NewsArticlesDetails";
 import AccountAdminPage from "./pages/AdminPages/AccountAdmin/AccountAdminPage";
 import AccountAdminUserPage from "./pages/AdminPages/AccountAdmin/AccountAdminUserPage";
+import AdminArticleAddPage from "./pages/AdminPages/ArticleAdmin/AdminArticleAddPage";
 import ArticleAdminPage from "./pages/AdminPages/ArticleAdmin/ArticleAdminPage";
 import LoginAdminPage from "./pages/AdminPages/LoginAdmin/LoginAdminPage";
 import LoginPage from "./pages/ClientPages/AuthPages/LoginPage";
@@ -80,6 +81,10 @@ const router = createBrowserRouter([
       {
         path: "/admin/account/user/add",
         element: <AdminUserAdd />,
+      },
+      {
+        path: "/admin/account/article/add",
+        element: <AdminArticleAddPage />,
       },
     ],
   },
