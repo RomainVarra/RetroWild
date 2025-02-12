@@ -5,8 +5,9 @@ import { checkUser } from "./middlewares/checkRole.middleware";
 import { checkEmail, verifieEmail } from "./middlewares/email.middleware";
 import { upload } from "./middlewares/multer.middleware";
 import { userRole } from "./middlewares/register.middleware";
-import { login } from "./modules/movie/Auth/authActions";
+import { login, verifyToken } from "./modules/movie/Auth/authActions";
 import movieActions from "./modules/movie/movieActions";
+import recommandationActions from "./modules/movie/recommandation/recommandationActions";
 import userActions from "./modules/movie/user/userActions";
 
 const router = express.Router();
@@ -41,6 +42,14 @@ router.post("/api/login", verifieEmail, comparePassword, checkUser, login);
 // Mettre à jour le compte utilisateur
 
 router.get("/api/user/:id", userActions.readUserData);
+
+// Faire une recommandation
+
+router.post(
+  "/api/recommandation",
+  verifyToken,
+  recommandationActions.addRecommandation,
+);
 
 /* ************************************************************************* */
 
