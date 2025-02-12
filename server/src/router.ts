@@ -1,7 +1,7 @@
 import path from "node:path";
 import express from "express";
 import { comparePassword, hashPassword } from "./middlewares/argon.middleware";
-import { checkUser } from "./middlewares/checkRole.middleware";
+import { checkAdmin, checkUser } from "./middlewares/checkRole.middleware";
 import { checkEmail, verifieEmail } from "./middlewares/email.middleware";
 import { upload } from "./middlewares/multer.middleware";
 import { userRole } from "./middlewares/register.middleware";
@@ -52,5 +52,13 @@ router.post(
 );
 
 /* ************************************************************************* */
+//Partie Administrateur
 
+router.post(
+  "/api/admin/login",
+  verifieEmail,
+  comparePassword,
+  checkAdmin,
+  login,
+);
 export default router;

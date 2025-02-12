@@ -1,7 +1,8 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 
-import LoginAdminPage from "./pages/AdminPages/LoginAdminPage";
+import AccountAdminPage from "./pages/AdminPages/AccountAdmin/AccountAdminPage";
+import LoginAdminPage from "./pages/AdminPages/LoginAdmin/LoginAdminPage";
 import LoginPage from "./pages/ClientPages/AuthPages/LoginPage";
 import RegisterPage from "./pages/ClientPages/AuthPages/RegisterPage";
 import HomePage from "./pages/ClientPages/Homepage";
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: "/admin/login",
         element: <LoginAdminPage />,
+      },
+      {
+        path: "/admin/account",
+        element: <AccountAdminPage />,
       },
     ],
   },
