@@ -56,6 +56,18 @@ const router = createBrowserRouter([
         path: "/admin/account",
         element: <AccountAdminPage />,
       },
+      {
+        path: "/admin/account/article",
+        element: <h2>Articles</h2>,
+      },
+      {
+        path: "/admin/account/movie",
+        element: <h2>Films</h2>,
+      },
+      {
+        path: "/admin/account/user",
+        element: <h2>User</h2>,
+      },
     ],
   },
 ]);

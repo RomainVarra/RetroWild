@@ -1,13 +1,45 @@
+import { useNavigate } from "react-router-dom";
 import style from "./accountAdminPage.module.css";
 
 function AccountAdminPage() {
+  const navigate = useNavigate();
+  const handleUserClick = () => {
+    navigate("/admin/account/user");
+  };
+  const handleMovieClick = () => {
+    navigate("/admin/account/movie");
+  };
+  const handleArticleClick = () => {
+    navigate("/admin/account/article");
+  };
+  const handleKeyUp = () => {
+    "Press Enter";
+  };
   return (
     <section className={style.adminAccountSection}>
       <h1 className={style.titleAdminAccount}>Compte Administrateur</h1>
       <div className={style.articleAdminSection}>
-        <article className={style.adminUser}>Utilisateur</article>
-        <article className={style.adminArticle}>Articles</article>
-        <article className={style.adminMovie}>Films</article>
+        <article
+          className={style.adminUser}
+          onClick={handleUserClick}
+          onKeyUp={handleKeyUp}
+        >
+          Utilisateur
+        </article>
+        <article
+          className={style.adminArticle}
+          onClick={handleMovieClick}
+          onKeyUp={handleKeyUp}
+        >
+          Articles
+        </article>
+        <article
+          className={style.adminMovie}
+          onClick={handleArticleClick}
+          onKeyUp={handleKeyUp}
+        >
+          Films
+        </article>
       </div>
     </section>
   );
