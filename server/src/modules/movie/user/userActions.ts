@@ -39,4 +39,25 @@ const readUserData: RequestHandler = async (req, res, next) => {
   }
 };
 
-export default { add, readUserData };
+const browseUser: RequestHandler = async (req, res, next) => {
+  try {
+    const users = await UserRepository.readAll();
+
+    res.status(201).json(users);
+  } catch (err) {
+    next(err);
+  }
+};
+
+const anonymizeUser: RequestHandler = async (req, res, next) => {
+  const userId = Number.parseInt(req.params.id);
+
+  try {
+    const anonymizedCandidate = await UserRepository.anonymizeUser(userId);
+    res.status(200).json(anonymizedCandidate);
+  } catch (err) {
+    next(err);
+  }
+};
+
+export default { add, readUserData, browseUser, anonymizeUser };

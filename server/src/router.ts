@@ -61,4 +61,27 @@ router.post(
   checkAdmin,
   login,
 );
+
+// Afficher la liste des utilisateurs
+
+router.get("/api/admin/account/user", verifyToken, userActions.browseUser);
+
+// Ajouter un nouvel utilisateur
+router.post(
+  "/api/admin/account/user/add",
+  verifyToken,
+  upload,
+  hashPassword,
+  checkEmail,
+  userRole,
+  userActions.add,
+);
+
+// Anonymiser un utilisateur
+router.put(
+  "/api/admin/account/user/:id",
+  verifyToken,
+  userActions.anonymizeUser,
+);
+
 export default router;

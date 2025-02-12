@@ -1,0 +1,35 @@
+.adminAccountSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleAdminAccount {
+  color: var(--primary-color);
+  font-size: 4em;
+}
+
+.articleAdminSection {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5em;
+  gap: 7em;
+}
+
+.adminArticle,
+.adminMovie,
+.adminUser {
+  color: var(--primary-color);
+  font-size: 3em;
+  border: 3px solid var(--primary-color);
+  padding: 1em 1em;
+  cursor: pointer;
+}
+
+.adminArticle:hover,
+.adminMovie:hover,
+.adminUser:hover {
+  color: black;
+  border-color: black;
+}

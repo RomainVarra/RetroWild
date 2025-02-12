@@ -1,7 +1,9 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 
+import AdminUserAdd from "./components/Admin/AdminUserAdd";
 import AccountAdminPage from "./pages/AdminPages/AccountAdmin/AccountAdminPage";
+import AccountAdminUserPage from "./pages/AdminPages/AccountAdmin/AccountAdminUserPage";
 import LoginAdminPage from "./pages/AdminPages/LoginAdmin/LoginAdminPage";
 import LoginPage from "./pages/ClientPages/AuthPages/LoginPage";
 import RegisterPage from "./pages/ClientPages/AuthPages/RegisterPage";
@@ -55,6 +57,22 @@ const router = createBrowserRouter([
       {
         path: "/admin/account",
         element: <AccountAdminPage />,
+      },
+      {
+        path: "/admin/account/article",
+        element: <h2>Articles</h2>,
+      },
+      {
+        path: "/admin/account/movie",
+        element: <h2>Films</h2>,
+      },
+      {
+        path: "/admin/account/user",
+        element: <AccountAdminUserPage />,
+      },
+      {
+        path: "/admin/account/user/add",
+        element: <AdminUserAdd />,
       },
     ],
   },
