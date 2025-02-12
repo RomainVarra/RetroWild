@@ -1,9 +1,14 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import type { registerType } from "../../../types/user.type";
 import style from "./accountAdminUserPage.module.css";
 
 function AccountAdminUserPage() {
   const [users, setUsers] = useState<registerType[]>([]);
+  const navigate = useNavigate();
+  const handleUserAdd = () => {
+    navigate("/admin/account/user/add");
+  };
 
   useEffect(() => {
     fetch(`${import.meta.env.VITE_API_URL}/api/admin/account/user`, {
@@ -50,7 +55,7 @@ function AccountAdminUserPage() {
           ))}
         </tbody>
       </table>
-      <button type="button" className={style.addButton}>
+      <button type="button" className={style.addButton} onClick={handleUserAdd}>
         Ajouter un utilisateur
       </button>
     </section>

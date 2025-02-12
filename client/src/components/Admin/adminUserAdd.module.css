@@ -1,0 +1,23 @@
+.adminUserAddSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adminUserAddTitle {
+  color: var(--primary-color);
+  font-size: 3em;
+  margin-bottom: 2em;
+}
+
+.buttonGoBack {
+  margin-bottom: 5em;
+  color: white;
+  border: none;
+  background-color: var(--secondary-color);
+  font-size: 1.5em;
+  width: 10em;
+  height: 3em;
+  border-radius: 10px;
+  cursor: pointer;
+}

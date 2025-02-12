@@ -43,7 +43,7 @@ const browseUser: RequestHandler = async (req, res, next) => {
   try {
     const users = await UserRepository.readAll();
 
-    res.json(users);
+    res.status(201).json(users);
   } catch (err) {
     next(err);
   }
