@@ -52,6 +52,9 @@ router.post(
   recommandationActions.addRecommandation,
 );
 
+//Lire tout les articles
+router.get("/api/articles", articleActions.browseArticle);
+
 /* ************************************************************************* */
 //Partie Administrateur
 

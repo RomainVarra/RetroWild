@@ -2,6 +2,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 
 import AdminUserAdd from "./components/Admin/AdminUserAdd";
+import Articles from "./components/Article/Articles";
 import NewArticlesDetails from "./components/Article/NewsArticlesDetails";
 import NewMovieDetails from "./components/Movie/NewsMoviesDetails";
 import Tops from "./components/Tops/Tops";
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
       {
         path: "/tops",
         element: <Tops />,
+      },
+      {
+        path: "/articles",
+        element: <Articles />,
       },
       {
         path: "*",
