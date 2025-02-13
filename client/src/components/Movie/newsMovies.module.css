@@ -1,0 +1,83 @@
+.newMovieTitle {
+  font-size: 2em;
+  padding: 0 0 2em 2em;
+  position: relative;
+}
+
+.newMovieTitle::before {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #ff4d5a;
+  width: 10em;
+  top: 3rem;
+}
+
+.newMovieSection {
+  padding: 0 4em 4em 4em;
+  font-size: 1.3em;
+}
+.firstMovieSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2em;
+  gap: 2em;
+}
+
+.cardMovie {
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  min-height: 100%;
+  padding: 1em;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.firstMoviePicture {
+  width: 10em;
+  height: 15em;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.firstMoviePicture:hover {
+  transform: scale(1.1);
+}
+
+.firstMovieTitle {
+  font-size: 1em;
+}
+
+.movieLink {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2em;
+  padding-bottom: 3em;
+}
+.linkToAllMovies {
+  background-color: #f8e16c;
+  width: 11em;
+  height: 2.2em;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.linkToAllMovies:hover {
+  background-color: var(--primary-color);
+  color: black;
+}
+
+@media (max-width: 470px) {
+  .newMovieTitle::before {
+    display: none;
+  }
+  .newMovieTitle {
+    color: var(--primary-color);
+  }
+}

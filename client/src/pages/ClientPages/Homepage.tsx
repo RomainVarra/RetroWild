@@ -1,5 +1,6 @@
 import affiches from "../../assets/images/affiches_RetroWild.jpg";
 import NewsArticles from "../../components/Article/NewsArticles";
+import NewsMovies from "../../components/Movie/NewsMovies";
 import style from "./homepage.module.css";
 
 function Homepage() {
@@ -31,6 +32,9 @@ function Homepage() {
         </article>
         <section>
           <NewsArticles />
+        </section>
+        <section>
+          <NewsMovies />
         </section>
       </section>
     </>
