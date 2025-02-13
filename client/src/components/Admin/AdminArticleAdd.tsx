@@ -29,9 +29,9 @@ function AdminArticleAdd({ onSubmit }: AdminFormArticleType) {
                   message: "Votre titre doit au moins contenir 2 caractères",
                 },
                 maxLength: {
-                  value: 50,
+                  value: 200,
                   message:
-                    "Votre titre ne peut pas contenir plus de 50 caractères",
+                    "Votre titre ne peut pas contenir plus de 200 caractères",
                 },
               })}
               type="text"
@@ -173,9 +173,9 @@ function AdminArticleAdd({ onSubmit }: AdminFormArticleType) {
                     "La première section doit au moins contenir 15 caractères",
                 },
                 maxLength: {
-                  value: 500,
+                  value: 2000,
                   message:
-                    "La première section ne peut pas contenir plus de 500 caractères",
+                    "La première section ne peut pas contenir plus de 2000 caractères",
                 },
               })}
               id="first_section"
@@ -231,9 +231,9 @@ function AdminArticleAdd({ onSubmit }: AdminFormArticleType) {
                     "La seconde section doit au moins contenir 15 caractères",
                 },
                 maxLength: {
-                  value: 500,
+                  value: 2000,
                   message:
-                    "La seconde section ne peut pas contenir plus de 500 caractères",
+                    "La seconde section ne peut pas contenir plus de 2000 caractères",
                 },
               })}
               id="second_section"

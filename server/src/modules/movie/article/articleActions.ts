@@ -21,5 +21,14 @@ const addArticle: RequestHandler = async (req, res, next) => {
     next(err);
   }
 };
+const browseArticle: RequestHandler = async (req, res, next) => {
+  try {
+    const articles = await ArticleRepository.readAll();
 
-export default { addArticle };
+    res.status(201).json(articles);
+  } catch (err) {
+    next(err);
+  }
+};
+
+export default { addArticle, browseArticle };

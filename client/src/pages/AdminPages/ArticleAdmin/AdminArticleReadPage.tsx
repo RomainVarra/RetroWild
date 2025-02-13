@@ -60,6 +60,7 @@ function AdminArticleReadPage() {
             <th>1e section</th>
             <th>Titre 2e section</th>
             <th>2e section</th>
+            <th>Supprimer</th>
           </tr>
         </thead>
         <tbody>

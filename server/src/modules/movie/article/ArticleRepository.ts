@@ -1,6 +1,6 @@
 import databaseClient from "../../../../database/client";
 
-import type { Result } from "../../../../database/client";
+import type { Result, Rows } from "../../../../database/client";
 
 export type articleType = {
   id: number;
@@ -30,6 +30,11 @@ class ArticleRepository {
       ],
     );
     return result.insertId;
+  }
+  async readAll() {
+    const [rows] = await databaseClient.query<Rows>("select * from article");
+
+    return rows as articleType[];
   }
 }
 

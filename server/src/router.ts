@@ -92,4 +92,10 @@ router.post(
   articleActions.addArticle,
 );
 
+//Lire l'ensemble des articles
+router.get(
+  "/api/admin/account/article",
+  verifyToken,
+  articleActions.browseArticle,
+);
 export default router;
