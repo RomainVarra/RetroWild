@@ -60,6 +60,10 @@ const router = createBrowserRouter([
         element: <MovieDetails />,
       },
       {
+        path: "/tops",
+        element: <h1>Les tops</h1>,
+      },
+      {
         path: "*",
         element: <ErrorPage />,
       },

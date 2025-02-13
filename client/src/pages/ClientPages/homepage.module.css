@@ -40,6 +40,65 @@
   font-size: 1.3em;
 }
 
+.topTitle {
+  font-size: 2em;
+  padding: 0 0 2em 2em;
+  position: relative;
+  margin-top: 3em;
+}
+
+.topTitle::before {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #ff4d5a;
+  width: 5em;
+  top: 3rem;
+}
+.topSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 1em 1em 1em;
+}
+.topArticle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 2em;
+  padding: 1em 1em;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+}
+
+.topPicture {
+  width: 15em;
+  padding: 1em 2em;
+  border-radius: 50%;
+}
+
+.topText {
+  font-size: 1.5em;
+}
+
+.topButton {
+  background-color: #f8e16c;
+  width: 11em;
+  height: 2.2em;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.topButton:hover {
+  background-color: var(--primary-color);
+  color: black;
+}
+
 @media (max-width: 600px) {
   .mainTitle::before {
     display: none;
