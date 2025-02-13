@@ -50,6 +50,7 @@ const router = createBrowserRouter([
         path: "/newArticle/:id",
         element: <NewArticlesDetails />,
       },
+
       {
         path: "/movie/:id",
         element: <MovieDetails />,
