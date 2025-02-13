@@ -3,6 +3,7 @@ import App from "./App";
 
 import AdminUserAdd from "./components/Admin/AdminUserAdd";
 import NewArticlesDetails from "./components/Article/NewsArticlesDetails";
+import NewMovieDetails from "./components/Movie/NewsMoviesDetails";
 import AccountAdminPage from "./pages/AdminPages/AccountAdmin/AccountAdminPage";
 import AccountAdminUserPage from "./pages/AdminPages/AccountAdmin/AccountAdminUserPage";
 import AdminArticleAddPage from "./pages/AdminPages/ArticleAdmin/AdminArticleAddPage";
@@ -50,7 +51,10 @@ const router = createBrowserRouter([
         path: "/newArticle/:id",
         element: <NewArticlesDetails />,
       },
-
+      {
+        path: "/newMovie/:id",
+        element: <NewMovieDetails />,
+      },
       {
         path: "/movie/:id",
         element: <MovieDetails />,

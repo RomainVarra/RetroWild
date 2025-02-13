@@ -27,7 +27,7 @@ function NewsMovies() {
               <img
                 className={style.firstMoviePicture}
                 src={m.poster_url}
-                alt={`représentation de l'article : ${m.movie_title}`}
+                alt={`représentation du film : ${m.movie_title}`}
                 onClick={() => handleNewsArticleClick(m.id)}
                 onKeyUp={OneKeyUp}
               />
