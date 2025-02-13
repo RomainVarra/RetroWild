@@ -50,4 +50,16 @@ const addMovie: RequestHandler = async (req, res, next) => {
   }
 };
 
-export default { read, browse, addMovie };
+const destroyMovie: RequestHandler = async (req, res, next) => {
+  try {
+    const movieId = Number(req.params.id);
+
+    await MovieRepository.delete(movieId);
+
+    res.sendStatus(204);
+  } catch (err) {
+    next(err);
+  }
+};
+
+export default { read, browse, addMovie, destroyMovie };

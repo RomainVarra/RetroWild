@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 import type { MovieType } from "../../types/movie.type";
 import style from "./adminMovieAdd.module.css";
 
@@ -12,6 +13,10 @@ function AdminMovieAdd({ onSubmit }: AdminFormMovieType) {
     handleSubmit,
     formState: { errors },
   } = useForm<MovieType>();
+  const navigate = useNavigate();
+  const handleGoBack = () => {
+    navigate(-1);
+  };
 
   return (
     <section>
@@ -275,7 +280,7 @@ function AdminMovieAdd({ onSubmit }: AdminFormMovieType) {
           Ajouter l'article
         </button>
       </form>
-      <button type="button" className={style.goBackBtn}>
+      <button type="button" className={style.goBackBtn} onClick={handleGoBack}>
         Revenir à la page précédente
       </button>
     </section>

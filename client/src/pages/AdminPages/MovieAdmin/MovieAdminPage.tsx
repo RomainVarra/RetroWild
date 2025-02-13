@@ -12,9 +12,12 @@ function MovieAdminPage() {
   const handleKeyUp = () => {
     "Press Enter";
   };
+  const handleGoBack = () => {
+    navigate("/admin/account");
+  };
   return (
     <section className={style.adminMovieSection}>
-      <h1 className={style.adminMovieTitle}>Articles</h1>
+      <h1 className={style.adminMovieTitle}>Films</h1>
       <div className={style.adminMovieCard}>
         <article
           className={style.MovieAdd}
@@ -31,6 +34,9 @@ function MovieAdminPage() {
           Tous les films
         </article>
       </div>
+      <button className={style.goBackBtn} type="button" onClick={handleGoBack}>
+        Revenir en arrière
+      </button>
     </section>
   );
 }
