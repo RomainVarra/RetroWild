@@ -4,6 +4,7 @@ import App from "./App";
 import AdminUserAdd from "./components/Admin/AdminUserAdd";
 import NewArticlesDetails from "./components/Article/NewsArticlesDetails";
 import NewMovieDetails from "./components/Movie/NewsMoviesDetails";
+import Tops from "./components/Tops/Tops";
 import AccountAdminPage from "./pages/AdminPages/AccountAdmin/AccountAdminPage";
 import AccountAdminUserPage from "./pages/AdminPages/AccountAdmin/AccountAdminUserPage";
 import AdminArticleAddPage from "./pages/AdminPages/ArticleAdmin/AdminArticleAddPage";
@@ -61,7 +62,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/tops",
-        element: <h1>Les tops</h1>,
+        element: <Tops />,
       },
       {
         path: "*",
