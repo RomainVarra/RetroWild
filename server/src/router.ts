@@ -55,6 +55,9 @@ router.post(
 //Lire tout les articles
 router.get("/api/articles", articleActions.browseArticle);
 
+//Lire un article spécifique
+router.get("/api/articles/:id", articleActions.readArticles);
+
 /* ************************************************************************* */
 //Partie Administrateur
 

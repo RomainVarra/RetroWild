@@ -42,4 +42,19 @@ const destroyArticle: RequestHandler = async (req, res, next) => {
   }
 };
 
-export default { addArticle, browseArticle, destroyArticle };
+const readArticles: RequestHandler = async (req, res, next) => {
+  try {
+    const id = Number(req.params.id);
+    const article = await ArticleRepository.read(id);
+
+    if (article == null) {
+      res.sendStatus(404);
+    } else {
+      res.json(article);
+    }
+  } catch (err) {
+    next(err);
+  }
+};
+
+export default { addArticle, browseArticle, destroyArticle, readArticles };

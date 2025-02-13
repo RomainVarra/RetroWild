@@ -45,6 +45,17 @@ class ArticleRepository {
 
     return result.affectedRows;
   }
+
+  async read(id: number) {
+    const [rows] = await databaseClient.query<Rows>(
+      `
+      SELECT * FROM article WHERE id = ?
+      `,
+      [id],
+    );
+
+    return rows[0] as articleType;
+  }
 }
 
 export default new ArticleRepository();

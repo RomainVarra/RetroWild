@@ -3,6 +3,7 @@ import App from "./App";
 
 import AdminUserAdd from "./components/Admin/AdminUserAdd";
 import Articles from "./components/Article/Articles";
+import ArticlesDetails from "./components/Article/ArticlesDetails";
 import NewArticlesDetails from "./components/Article/NewsArticlesDetails";
 import NewMovieDetails from "./components/Movie/NewsMoviesDetails";
 import Tops from "./components/Tops/Tops";
@@ -68,6 +69,10 @@ const router = createBrowserRouter([
       {
         path: "/articles",
         element: <Articles />,
+      },
+      {
+        path: "/articles/:id",
+        element: <ArticlesDetails />,
       },
       {
         path: "*",
