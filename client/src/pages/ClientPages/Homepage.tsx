@@ -1,9 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import affiches from "../../assets/images/affiches_RetroWild.jpg";
+import trophée from "../../assets/images/images.jpg";
 import NewsArticles from "../../components/Article/NewsArticles";
 import NewsMovies from "../../components/Movie/NewsMovies";
 import style from "./homepage.module.css";
 
 function Homepage() {
+  const navigate = useNavigate();
+  const handleTopClick = () => {
+    navigate("/tops");
+  };
   return (
     <>
       <section className={style.homePage}>
@@ -35,6 +41,26 @@ function Homepage() {
         </section>
         <section>
           <NewsMovies />
+        </section>
+        <h3 className={style.topTitle}>Les tops</h3>
+        <section className={style.topSection}>
+          <article className={style.topArticle}>
+            <img
+              className={style.topPicture}
+              src={trophée}
+              alt="Trophée pour illustrer la section top"
+            />
+            <p className={style.topText}>
+              Découvrir sans plus attendre les tops de la rédac' !
+            </p>
+          </article>
+          <button
+            onClick={handleTopClick}
+            className={style.topButton}
+            type="button"
+          >
+            Voir les tops
+          </button>
         </section>
       </section>
     </>

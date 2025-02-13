@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "picture": "https://media.senscritique.com/media/000007863804/300/metropolis.jpg",
+    "title": "Metropolis",
+    "director": "Fritz Lang",
+    "year": 1927,
+    "genre": "Drame, Science-fiction, Muet",
+    "synopsis": "Dans une ville futuriste divisée entre riches et ouvriers, un jeune homme découvre l'oppression subie par la classe laborieuse et tente de rétablir la justice."
+  },
+  {
+    "id": 2,
+    "picture": "https://media.senscritique.com/media/000019176617/300/le_kid.jpg",
+    "title": "Le Kid",
+    "director": "Charlie Chaplin",
+    "year": 1921,
+    "genre": "Comédie dramatique, Muet",
+    "synopsis": "Un vagabond recueille un enfant abandonné et l’élève avec tendresse malgré les épreuves de la vie. Un chef-d'œuvre émouvant et burlesque."
+  },
+  {
+    "id": 3,
+    "picture": "https://media.senscritique.com/media/000004692781/300/l_aurore.jpg",
+    "title": "L'Aurore",
+    "director": "F.W. Murnau",
+    "year": 1927,
+    "genre": "Drame, Romance, Muet",
+    "synopsis": "Un fermier, sous l’influence d’une séductrice, tente de tuer sa femme, mais il se ravise et cherche à se racheter dans une histoire poignante de rédemption."
+  },
+  {
+    "id": 4,
+    "picture": "https://media.senscritique.com/media/000021041192/300/nosferatu_le_vampire.jpg",
+    "title": "Nosferatu le vampire",
+    "director": "F.W. Murnau",
+    "year": 1922,
+    "genre": "Épouvante-Horreur, Fantastique, Muet",
+    "synopsis": "Adaptation non officielle de Dracula, ce film expressionniste raconte l’histoire du comte Orlok, un vampire terrifiant qui sème la terreur."
+  },
+  {
+    "id": 5,
+    "picture": "https://media.senscritique.com/media/000019174375/300/le_mecano_de_la_generale.jpg",
+    "title": "Le Mécano de la Générale",
+    "director": "Buster Keaton, Clyde Bruckman",
+    "year": 1926,
+    "genre": "Action, Aventure, Muet",
+    "synopsis": "Un mécanicien voit son train et sa fiancée kidnappés par des espions. Il se lance dans une course-poursuite spectaculaire pour les récupérer."
+  },
+  {
+    "id": 6,
+    "picture": "https://media.senscritique.com/media/000016574975/300/la_ruee_vers_l_or.jpg",
+    "title": "La Ruée vers l'or",
+    "director": "Charlie Chaplin",
+    "year": 1925,
+    "genre": "Aventure, Comédie dramatique, Muet",
+    "synopsis": "Charlie Chaplin incarne un chercheur d’or en quête de fortune dans le Grand Nord, dans une aventure burlesque et émouvante."
+  },
+  {
+    "id": 7,
+    "picture": "https://media.senscritique.com/media/000020237426/300/sherlock_junior.jpg",
+    "title": "Sherlock Junior",
+    "director": "Buster Keaton",
+    "year": 1924,
+    "genre": "Comédie, Action, Muet",
+    "synopsis": "Un projectionniste rêve d’être détective et se retrouve plongé dans une enquête rocambolesque à travers un montage ingénieux et des cascades spectaculaires."
+  },
+  {
+    "id": 8,
+    "picture": "https://media.senscritique.com/media/000020237422/300/le_cuirasse_potemkine.jpg",
+    "title": "Le Cuirassé Potemkine",
+    "director": "Sergueï Eisenstein",
+    "year": 1925,
+    "genre": "Drame, Historique, Muet",
+    "synopsis": "Inspiré d’un soulèvement réel, ce film soviétique retrace la mutinerie du cuirassé Potemkine et la célèbre scène des marches d’Odessa."
+  },
+  {
+    "id": 9,
+    "picture": "https://media.senscritique.com/media/000006262054/300/le_cabinet_du_docteur_caligari.jpg",
+    "title": "Le Cabinet du docteur Caligari",
+    "director": "Robert Wiene",
+    "year": 1920,
+    "genre": "Drame, Thriller, Muet",
+    "synopsis": "Un hypnotiseur manipulateur utilise un somnambule pour commettre des meurtres dans un chef-d'œuvre du cinéma expressionniste allemand."
+  },
+  {
+    "id": 10,
+    "picture": "https://media.senscritique.com/media/000021028102/300/les_chasses_du_comte_zaroff.jpg",
+    "title": "Les Chasses du comte Zaroff",
+    "director": "Ernest B. Schoedsack",
+    "year": 1932,
+    "genre": "Aventure",
+    "synopsis": "Un chasseur de renom échoue sur une île à la suite d'un naufrage dont il est le seul survivant. Le comte Zaroff le recueille et le soigne, seulement, il se rendra bientôt compte que ce comte, raffiné et cultivé, entretient une mortelle passion pour la chasse. Las de la chasse conventionnelle, le mystérieux comte est à la recherche de nouveaux frissons...."
+  }
+]

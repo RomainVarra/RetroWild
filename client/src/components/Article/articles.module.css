@@ -1,0 +1,55 @@
+.articleSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 3em;
+}
+.ArticleTitle {
+  font-size: 2em;
+  padding: 0 0 2em 2em;
+  position: relative;
+}
+.ArticleTitle::before {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #ff4d5a;
+  width: 6em;
+  top: 3rem;
+}
+
+.firstArticleSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.cardArticle {
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+  min-height: 100%;
+  padding: 1em;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  gap: 0.5em;
+}
+
+.articlePicture {
+  width: 30em;
+  height: 12em;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.articlePicture:hover {
+  transform: scale(1.1);
+}
+
+.firstArticleTitle {
+  font-size: 1em;
+  padding: 1em 1em;
+}
