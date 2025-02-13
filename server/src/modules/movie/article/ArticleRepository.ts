@@ -43,7 +43,6 @@ class ArticleRepository {
       [id],
     );
 
-    // Return how many rows were affected
     return result.affectedRows;
   }
 }

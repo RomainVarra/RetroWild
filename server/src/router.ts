@@ -105,4 +105,18 @@ router.delete(
   verifyToken,
   articleActions.destroyArticle,
 );
+
+//Ajouter un film
+router.post("/api/admin/account/movie/add", verifyToken, movieActions.addMovie);
+
+//Afficher les films
+router.get("/api/admin/account/movie", verifyToken, movieActions.browse);
+
+//Supprimer un film
+router.delete(
+  "/api/admin/account/movie/:id",
+  verifyToken,
+  movieActions.destroyMovie,
+);
+
 export default router;
