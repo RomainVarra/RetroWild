@@ -9,6 +9,7 @@ import AdminArticleAddPage from "./pages/AdminPages/ArticleAdmin/AdminArticleAdd
 import AdminArticleReadPage from "./pages/AdminPages/ArticleAdmin/AdminArticleReadPage";
 import ArticleAdminPage from "./pages/AdminPages/ArticleAdmin/ArticleAdminPage";
 import LoginAdminPage from "./pages/AdminPages/LoginAdmin/LoginAdminPage";
+import MovieAdminPage from "./pages/AdminPages/MovieAdmin/MovieAdminPage";
 import LoginPage from "./pages/ClientPages/AuthPages/LoginPage";
 import RegisterPage from "./pages/ClientPages/AuthPages/RegisterPage";
 import ErrorPage from "./pages/ClientPages/ErrorPage/ErrorPage";
@@ -73,7 +74,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/admin/account/movie",
-        element: <h2>Films</h2>,
+        element: <MovieAdminPage />,
       },
       {
         path: "/admin/account/user",
