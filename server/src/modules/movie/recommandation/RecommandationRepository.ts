@@ -1,6 +1,6 @@
 import databaseClient from "../../../../database/client";
 
-import type { Result } from "../../../../database/client";
+import type { Result, Rows } from "../../../../database/client";
 
 export type RecommandationType = {
   id: number;
@@ -22,6 +22,21 @@ class RecommandationRepository {
       ],
     );
     return result.insertId;
+  }
+  async readAll() {
+    const [rows] = await databaseClient.query<Rows>(
+      "select * from recommandation",
+    );
+    return rows as RecommandationType[];
+  }
+
+  async delete(id: number) {
+    const [result] = await databaseClient.query<Result>(
+      "delete from recommandation where id = ?",
+      [id],
+    );
+
+    return result.affectedRows;
   }
 }
 
