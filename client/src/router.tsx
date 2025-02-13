@@ -9,6 +9,7 @@ import AdminArticleAddPage from "./pages/AdminPages/ArticleAdmin/AdminArticleAdd
 import AdminArticleReadPage from "./pages/AdminPages/ArticleAdmin/AdminArticleReadPage";
 import ArticleAdminPage from "./pages/AdminPages/ArticleAdmin/ArticleAdminPage";
 import LoginAdminPage from "./pages/AdminPages/LoginAdmin/LoginAdminPage";
+import AdminMovieAddPage from "./pages/AdminPages/MovieAdmin/AdminMovieAddPage";
 import MovieAdminPage from "./pages/AdminPages/MovieAdmin/MovieAdminPage";
 import LoginPage from "./pages/ClientPages/AuthPages/LoginPage";
 import RegisterPage from "./pages/ClientPages/AuthPages/RegisterPage";
@@ -91,6 +92,10 @@ const router = createBrowserRouter([
       {
         path: "/admin/account/article/all",
         element: <AdminArticleReadPage />,
+      },
+      {
+        path: "/admin/account/movie/add",
+        element: <AdminMovieAddPage />,
       },
     ],
   },

@@ -15,7 +15,7 @@ CREATE TABLE user (
 
 CREATE TABLE movies (
     id INT PRIMARY KEY AUTO_INCREMENT, 
-    title VARCHAR(255) NOT NULL,       
+    movie_title VARCHAR(255) NOT NULL,       
     release_year YEAR NOT NULL,    
     director VARCHAR(255),          
     genre VARCHAR(100), 
@@ -52,7 +52,7 @@ CREATE TABLE article (
 INSERT INTO role (label)
 VALUES ("Admin"), ("User"); 
 
-INSERT INTO movies (title, release_year, director, genre, duration, language, description, poster_url, video_url, rating) 
+INSERT INTO movies (movie_title, release_year, director, genre, duration, language, description, poster_url, video_url, rating) 
 VALUES
 (
     "Steamboat Willie",

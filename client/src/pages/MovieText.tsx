@@ -19,8 +19,8 @@ function MovieTest() {
       <div>
         {movie.map((m) => (
           <section key={m.id}>
-            <h1>{m.title}</h1>
-            <img src={m.poster_url} alt={`affiche de ${m.title}`} />
+            <h1>{m.movie_title}</h1>
+            <img src={m.poster_url} alt={`affiche de ${m.movie_title}`} />
             <span>{m.release_year}</span>
             <span>{m.genre}</span>
             <button type="button" onClick={() => navigate(`/movie/${m.id}`)}>

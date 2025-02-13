@@ -18,8 +18,8 @@ function MovieDetails() {
 
   return (
     <div>
-      <h1>{movie?.title}</h1>
-      <img src={movie?.poster_url} alt={`Affiche de ${movie?.title}`} />
+      <h1>{movie?.movie_title}</h1>
+      <img src={movie?.poster_url} alt={`Affiche de ${movie?.movie_title}`} />
 
       <p>Année de sortie: {movie?.release_year}</p>
       <p>Genre: {movie?.genre}</p>

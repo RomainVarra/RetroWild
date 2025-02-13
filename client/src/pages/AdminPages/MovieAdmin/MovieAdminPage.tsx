@@ -3,10 +3,10 @@ import style from "./movieAdminPage.module.css";
 
 function MovieAdminPage() {
   const navigate = useNavigate();
-  const handleAddArticle = () => {
+  const handleAddMovie = () => {
     navigate("/admin/account/movie/add");
   };
-  const handleShowArticle = () => {
+  const handleShowMovie = () => {
     navigate("/admin/account/movie/all");
   };
   const handleKeyUp = () => {
@@ -18,14 +18,14 @@ function MovieAdminPage() {
       <div className={style.adminMovieCard}>
         <article
           className={style.MovieAdd}
-          onClick={handleAddArticle}
+          onClick={handleAddMovie}
           onKeyUp={handleKeyUp}
         >
           Publier un film
         </article>
         <article
           className={style.MovieAll}
-          onClick={handleShowArticle}
+          onClick={handleShowMovie}
           onKeyUp={handleKeyUp}
         >
           Tous les films

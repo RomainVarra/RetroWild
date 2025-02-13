@@ -1,6 +1,6 @@
 export type MovieType = {
   id: number;
-  title: string;
+  movie_title: string;
   release_year: number;
   director: string;
   genre: string;
@@ -9,5 +9,5 @@ export type MovieType = {
   description: string;
   poster_url: string;
   video_url: string;
-  imdb_rating: number;
+  rating: number;
 };
