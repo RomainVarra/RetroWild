@@ -58,6 +58,9 @@ router.get("/api/articles", articleActions.browseArticle);
 //Lire un article spécifique
 router.get("/api/articles/:id", articleActions.readArticles);
 
+//Lire tous les films
+router.get("/api/movies", movieActions.browse);
+
 /* ************************************************************************* */
 //Partie Administrateur
 

@@ -5,6 +5,7 @@ import AdminUserAdd from "./components/Admin/AdminUserAdd";
 import Articles from "./components/Article/Articles";
 import ArticlesDetails from "./components/Article/ArticlesDetails";
 import NewArticlesDetails from "./components/Article/NewsArticlesDetails";
+import Movies from "./components/Movie/Movies";
 import NewMovieDetails from "./components/Movie/NewsMoviesDetails";
 import Tops from "./components/Tops/Tops";
 import AccountAdminPage from "./pages/AdminPages/AccountAdmin/AccountAdminPage";
@@ -73,6 +74,10 @@ const router = createBrowserRouter([
       {
         path: "/articles/:id",
         element: <ArticlesDetails />,
+      },
+      {
+        path: "/streaming",
+        element: <Movies />,
       },
       {
         path: "*",
