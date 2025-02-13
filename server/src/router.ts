@@ -105,4 +105,8 @@ router.delete(
   verifyToken,
   articleActions.destroyArticle,
 );
+
+//Ajouter un film
+router.post("/api/admin/account/movie/add", verifyToken, movieActions.addMovie);
+
 export default router;

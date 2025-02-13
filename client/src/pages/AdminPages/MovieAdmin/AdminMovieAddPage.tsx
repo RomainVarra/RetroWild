@@ -7,7 +7,7 @@ function AdminMovieAddPage() {
   const handleArticleSubmit = async (data: MovieType) => {
     try {
       const newArticle = await fetch(
-        `${import.meta.env.VITE_API_URL}/api/admin/account/article/add`,
+        `${import.meta.env.VITE_API_URL}/api/admin/account/movie/add`,
         {
           method: "POST",
           headers: {
@@ -17,9 +17,10 @@ function AdminMovieAddPage() {
           credentials: "include",
         },
       );
+
       if (newArticle.ok) {
         setTimeout(() => {
-          navigate("/admin/account/article");
+          navigate("/admin/account/movie");
         }, 2000);
       }
     } catch (err) {

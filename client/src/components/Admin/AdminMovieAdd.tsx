@@ -47,18 +47,13 @@ function AdminMovieAdd({ onSubmit }: AdminFormMovieType) {
           </label>
 
           <label htmlFor="release_year" className={style.releaseYearLabel}>
-            Date de publication :
+            Année de sortie du film :
             <input
-              placeholder="18 mars 1995"
+              placeholder="1925"
               {...register("release_year", {
-                required: "Le champ est requis",
-                minLength: {
-                  value: 6,
-                  message: "la date doit au moins contenir 6 caractères",
-                },
-                maxLength: {
-                  value: 20,
-                  message: "La date ne peut pas contenir plus de 20 caractères",
+                pattern: {
+                  value: /^(19[0-9]{2})$/,
+                  message: "L'année doit être dans le 20e siècle",
                 },
               })}
               type="text"
@@ -204,7 +199,7 @@ function AdminMovieAdd({ onSubmit }: AdminFormMovieType) {
           </label>
 
           <label htmlFor="poster_url" className={style.posterUrlLabel}>
-            Lien vers l'image du film':
+            Lien vers l'image du film:
             <input
               placeholder="https://intergalactiques.net/wp-content/uploads/2024/03/les-chasses-du-comte-zaroff-01.jpg"
               {...register("poster_url", {
@@ -230,7 +225,7 @@ function AdminMovieAdd({ onSubmit }: AdminFormMovieType) {
           </label>
 
           <label htmlFor="video_url" className={style.videoUrlLabel}>
-            Lien vers l'url du film':
+            Lien vers l'url du film:
             <input
               placeholder="https://www.youtube.com/watch?v=BBgghnQF6E4"
               {...register("video_url", {
@@ -257,7 +252,7 @@ function AdminMovieAdd({ onSubmit }: AdminFormMovieType) {
           <label htmlFor="rating" className={style.ratingLabel}>
             Note du film (/10) :
             <input
-              placeholder="https://www.youtube.com/watch?v=BBgghnQF6E4"
+              placeholder="8.5"
               {...register("rating", {
                 required: "Le champ est requis",
                 pattern: {
