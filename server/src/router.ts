@@ -98,4 +98,11 @@ router.get(
   verifyToken,
   articleActions.browseArticle,
 );
+
+//supprimer un article
+router.delete(
+  "/api/admin/account/article/:id",
+  verifyToken,
+  articleActions.destroyArticle,
+);
 export default router;

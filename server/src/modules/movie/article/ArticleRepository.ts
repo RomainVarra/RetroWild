@@ -36,6 +36,16 @@ class ArticleRepository {
 
     return rows as articleType[];
   }
+
+  async delete(id: number) {
+    const [result] = await databaseClient.query<Result>(
+      "delete from article where id = ?",
+      [id],
+    );
+
+    // Return how many rows were affected
+    return result.affectedRows;
+  }
 }
 
 export default new ArticleRepository();

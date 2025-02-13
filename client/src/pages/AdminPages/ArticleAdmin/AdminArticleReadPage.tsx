@@ -22,27 +22,16 @@ function AdminArticleReadPage() {
       });
   }, []);
 
-  const handleDeleteArticle = async (userId: number) => {
-    const apiUrl = `${import.meta.env.VITE_API_URL}/api/admin/account/article/${userId}`;
+  const handleDeleteArticle = async (articleId: number) => {
+    const apiUrl = `${import.meta.env.VITE_API_URL}/api/admin/account/article/${articleId}`;
 
     const response = await fetch(apiUrl, {
-      method: "PUT",
+      method: "DELETE",
       credentials: "include",
     });
 
     if (response.ok) {
-      const anonymizedCandidate = await response.json();
-      setArticles(
-        articles.map((user) =>
-          user.id === userId ? anonymizedCandidate : user,
-        ),
-      );
-    } else {
-      const errorDetail = await response.text();
-      console.error(
-        "Erreur lors de l'anonymisation du candidat :",
-        errorDetail,
-      );
+      navigate("/admin/account/article");
     }
   };
   return (

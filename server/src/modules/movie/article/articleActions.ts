@@ -30,5 +30,16 @@ const browseArticle: RequestHandler = async (req, res, next) => {
     next(err);
   }
 };
+const destroyArticle: RequestHandler = async (req, res, next) => {
+  try {
+    const articleId = Number(req.params.id);
 
-export default { addArticle, browseArticle };
+    await ArticleRepository.delete(articleId);
+
+    res.sendStatus(204);
+  } catch (err) {
+    next(err);
+  }
+};
+
+export default { addArticle, browseArticle, destroyArticle };
