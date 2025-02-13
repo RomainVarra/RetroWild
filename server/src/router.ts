@@ -6,6 +6,7 @@ import { checkEmail, verifieEmail } from "./middlewares/email.middleware";
 import { upload } from "./middlewares/multer.middleware";
 import { userRole } from "./middlewares/register.middleware";
 import { login, verifyToken } from "./modules/movie/Auth/authActions";
+import articleActions from "./modules/movie/article/articleActions";
 import movieActions from "./modules/movie/movieActions";
 import recommandationActions from "./modules/movie/recommandation/recommandationActions";
 import userActions from "./modules/movie/user/userActions";
@@ -84,4 +85,24 @@ router.put(
   userActions.anonymizeUser,
 );
 
+//Ajouter un article
+router.post(
+  "/api/admin/account/article/add",
+  verifyToken,
+  articleActions.addArticle,
+);
+
+//Lire l'ensemble des articles
+router.get(
+  "/api/admin/account/article",
+  verifyToken,
+  articleActions.browseArticle,
+);
+
+//supprimer un article
+router.delete(
+  "/api/admin/account/article/:id",
+  verifyToken,
+  articleActions.destroyArticle,
+);
 export default router;

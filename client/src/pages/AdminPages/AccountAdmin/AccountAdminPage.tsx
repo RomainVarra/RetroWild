@@ -28,14 +28,14 @@ function AccountAdminPage() {
         </article>
         <article
           className={style.adminArticle}
-          onClick={handleMovieClick}
+          onClick={handleArticleClick}
           onKeyUp={handleKeyUp}
         >
           Articles
         </article>
         <article
           className={style.adminMovie}
-          onClick={handleArticleClick}
+          onClick={handleMovieClick}
           onKeyUp={handleKeyUp}
         >
           Films

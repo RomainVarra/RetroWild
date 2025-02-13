@@ -5,6 +5,9 @@ import AdminUserAdd from "./components/Admin/AdminUserAdd";
 import NewArticlesDetails from "./components/Article/NewsArticlesDetails";
 import AccountAdminPage from "./pages/AdminPages/AccountAdmin/AccountAdminPage";
 import AccountAdminUserPage from "./pages/AdminPages/AccountAdmin/AccountAdminUserPage";
+import AdminArticleAddPage from "./pages/AdminPages/ArticleAdmin/AdminArticleAddPage";
+import AdminArticleReadPage from "./pages/AdminPages/ArticleAdmin/AdminArticleReadPage";
+import ArticleAdminPage from "./pages/AdminPages/ArticleAdmin/ArticleAdminPage";
 import LoginAdminPage from "./pages/AdminPages/LoginAdmin/LoginAdminPage";
 import LoginPage from "./pages/ClientPages/AuthPages/LoginPage";
 import RegisterPage from "./pages/ClientPages/AuthPages/RegisterPage";
@@ -66,7 +69,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/admin/account/article",
-        element: <h2>Articles</h2>,
+        element: <ArticleAdminPage />,
       },
       {
         path: "/admin/account/movie",
@@ -79,6 +82,14 @@ const router = createBrowserRouter([
       {
         path: "/admin/account/user/add",
         element: <AdminUserAdd />,
+      },
+      {
+        path: "/admin/account/article/add",
+        element: <AdminArticleAddPage />,
+      },
+      {
+        path: "/admin/account/article/all",
+        element: <AdminArticleReadPage />,
       },
     ],
   },

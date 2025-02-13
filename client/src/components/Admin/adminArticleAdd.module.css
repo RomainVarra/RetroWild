@@ -1,0 +1,91 @@
+.formArticleTitle {
+  color: #ff4d5a;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.articleForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.articleFormSection {
+  border: 3px solid #ff4d5a;
+  padding: 1em 1em 1em 1em;
+  border-radius: 10px;
+}
+
+.titleLabel,
+.publishedDateLabel,
+.authorLabel,
+.pictureArticleLabel,
+.firstTitleSectionLabel,
+.firstSectionLabel,
+.secondTitleSectionLabel,
+.secondSectionLabel {
+  display: block;
+  color: #ff4d5a;
+  font-size: 1.5em;
+}
+
+.titleInput,
+.publishedDateInput,
+.authorInput,
+.pictureArticleInput,
+.firstTitleSectionInput,
+.firstSectionInput,
+.secondTitleSectionInput,
+.secondSectionInput {
+  margin: 1em 0;
+  display: block;
+  font-size: 1em;
+  color: black;
+}
+.firstSectionInput,
+.secondSectionInput {
+  height: 10em;
+  width: 30em;
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.9em;
+  display: block;
+}
+
+.submitButton {
+  margin-bottom: 5em;
+  margin-top: 2em;
+  color: black;
+  border: none;
+  background-color: var(--tertiary-color);
+  font-size: 1.2em;
+  width: 7em;
+  height: 2em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.goBackBtn {
+  margin-bottom: 5em;
+  color: white;
+  border: none;
+  background-color: var(--secondary-color);
+  font-size: 1em;
+  width: 10em;
+  height: 3em;
+  border-radius: 10px;
+  margin-left: 2em;
+  cursor: pointer;
+}
