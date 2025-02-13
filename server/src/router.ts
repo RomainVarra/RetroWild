@@ -61,6 +61,9 @@ router.get("/api/articles/:id", articleActions.readArticles);
 //Lire tous les films
 router.get("/api/movies", movieActions.browse);
 
+// Lire un film spécifique
+router.get("/api/movies/:id", movieActions.read);
+
 /* ************************************************************************* */
 //Partie Administrateur
 

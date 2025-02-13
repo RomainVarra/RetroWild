@@ -6,6 +6,7 @@ import Articles from "./components/Article/Articles";
 import ArticlesDetails from "./components/Article/ArticlesDetails";
 import NewArticlesDetails from "./components/Article/NewsArticlesDetails";
 import Movies from "./components/Movie/Movies";
+import MovieDetails from "./components/Movie/MoviesDetails";
 import NewMovieDetails from "./components/Movie/NewsMoviesDetails";
 import Tops from "./components/Tops/Tops";
 import AccountAdminPage from "./pages/AdminPages/AccountAdmin/AccountAdminPage";
@@ -24,7 +25,6 @@ import ErrorPage from "./pages/ClientPages/ErrorPage/ErrorPage";
 import HomePage from "./pages/ClientPages/Homepage";
 import AccountPage from "./pages/ClientPages/User/AccountPage";
 import RecommandationPage from "./pages/ClientPages/User/RecommandationPage";
-import MovieDetails from "./pages/MovieDetails";
 
 const router = createBrowserRouter([
   {
@@ -60,10 +60,6 @@ const router = createBrowserRouter([
         element: <NewMovieDetails />,
       },
       {
-        path: "/movie/:id",
-        element: <MovieDetails />,
-      },
-      {
         path: "/tops",
         element: <Tops />,
       },
@@ -78,6 +74,10 @@ const router = createBrowserRouter([
       {
         path: "/streaming",
         element: <Movies />,
+      },
+      {
+        path: "/streaming/:id",
+        element: <MovieDetails />,
       },
       {
         path: "*",

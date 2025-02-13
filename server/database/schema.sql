@@ -122,7 +122,7 @@ VALUES
     94,
     "Muet s-t fr",
     "Un homme est partagé entre son amour pour sa femme et la tentation d'une femme fatale, dans un chef-d'œuvre du cinéma muet.",
-    "lien_image_laurore.jpg",
+    "https://media.senscritique.com/media/000004692781/300/l_aurore.jpg",
     "https://www.youtube.com/watch?v=efFxkmoHYpo",
     8.3
 ),
@@ -146,8 +146,8 @@ VALUES
     75,
     "Muet",
     "Un film révolutionnaire retraçant la mutinerie du cuirassé Potemkine en 1905, célèbre pour sa scène des escaliers d’Odessa.",
-    "lien_image_potemkine.jpg",
-    "lien_youtube_potemkine",
+    "https://media.senscritique.com/media/000020237422/300/le_cuirasse_potemkine.jpg",
+    "https://www.youtube.com/watch?v=KXy4jGmPOro",
     8.0
 ),
 (
