@@ -1,0 +1,58 @@
+.sectionRecAdmin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleRecAdmin {
+  color: var(--primary-color);
+  font-size: 3em;
+  margin-bottom: 2em;
+}
+
+.recTable {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #da868e;
+  border: 1px solid #ddd;
+  padding: 1em;
+  text-align: center;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 1em;
+  text-align: center;
+  color: black;
+}
+
+.deleteButton {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.deleteButton {
+  background-color: rgb(216, 45, 45);
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #da868e;
+  color: black;
+}
+
+.buttonGoBack {
+  margin-bottom: 5em;
+  color: white;
+  border: none;
+  background-color: var(--secondary-color);
+  font-size: 1em;
+  width: 8em;
+  height: 2.5em;
+  border-radius: 10px;
+  cursor: pointer;
+}

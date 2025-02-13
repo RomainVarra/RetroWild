@@ -14,6 +14,7 @@ export type loginType = {
 };
 
 export type recommandationType = {
+  id: number;
   what: string;
   who: string;
   why: string;

@@ -18,4 +18,26 @@ const addRecommandation: RequestHandler = async (req, res, next) => {
   }
 };
 
-export default { addRecommandation };
+const browseRec: RequestHandler = async (req, res, next) => {
+  try {
+    const rec = await RecommandationRepository.readAll();
+
+    res.json(rec);
+  } catch (err) {
+    next(err);
+  }
+};
+
+const destroyRec: RequestHandler = async (req, res, next) => {
+  try {
+    const recId = Number(req.params.id);
+
+    await RecommandationRepository.delete(recId);
+
+    res.sendStatus(204);
+  } catch (err) {
+    next(err);
+  }
+};
+
+export default { addRecommandation, browseRec, destroyRec };

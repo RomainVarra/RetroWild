@@ -119,4 +119,18 @@ router.delete(
   movieActions.destroyMovie,
 );
 
+//Lire les recommandations
+router.get(
+  "/api/admin/account/recommandation",
+  verifyToken,
+  recommandationActions.browseRec,
+);
+
+//Supprimer une recommandation
+router.delete(
+  "/api/admin/account/recommandation/:id",
+  verifyToken,
+  recommandationActions.destroyRec,
+);
+
 export default router;

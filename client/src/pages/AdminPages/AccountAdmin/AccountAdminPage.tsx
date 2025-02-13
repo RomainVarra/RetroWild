@@ -12,6 +12,9 @@ function AccountAdminPage() {
   const handleArticleClick = () => {
     navigate("/admin/account/article");
   };
+  const handleRecClick = () => {
+    navigate("/admin/account/recommandation");
+  };
   const handleKeyUp = () => {
     "Press Enter";
   };
@@ -39,6 +42,13 @@ function AccountAdminPage() {
           onKeyUp={handleKeyUp}
         >
           Films
+        </article>
+        <article
+          className={style.adminMovie}
+          onClick={handleRecClick}
+          onKeyUp={handleKeyUp}
+        >
+          Recommandation
         </article>
       </div>
     </section>
