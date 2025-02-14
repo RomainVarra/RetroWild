@@ -59,7 +59,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1em 1em 1em 1em;
+  padding: 1em 1em 4em 1em;
 }
 .topArticle {
   display: flex;
