@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 import type { articleType } from "../../types/article.type";
 import style from "./adminArticleAdd.module.css";
 
@@ -12,6 +13,12 @@ function AdminArticleAdd({ onSubmit }: AdminFormArticleType) {
     handleSubmit,
     formState: { errors },
   } = useForm<articleType>();
+
+  const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    navigate("/admin/account/article");
+  };
 
   return (
     <section>
@@ -250,7 +257,7 @@ function AdminArticleAdd({ onSubmit }: AdminFormArticleType) {
           Ajouter l'article
         </button>
       </form>
-      <button type="button" className={style.goBackBtn}>
+      <button type="button" className={style.goBackBtn} onClick={handleGoBack}>
         Revenir à la page précédente
       </button>
     </section>

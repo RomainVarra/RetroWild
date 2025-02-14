@@ -31,3 +31,17 @@
   color: black;
   border-color: black;
 }
+
+.goBackBtn {
+  background-color: var(--primary-color);
+  margin-top: 5em;
+  width: 10em;
+  height: 3em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.goBackBtn:hover {
+  background-color: black;
+  color: white;
+}

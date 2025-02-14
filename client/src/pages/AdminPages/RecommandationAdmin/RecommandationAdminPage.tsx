@@ -36,7 +36,7 @@ function AdminRecommandationPage() {
   };
   return (
     <section className={style.sectionRecAdmin}>
-      <h1 className={style.titleRecAdmin}>Liste des articles</h1>
+      <h1 className={style.titleRecAdmin}>Liste des recommandations</h1>
       <table className={style.recTable}>
         <thead>
           <tr>
@@ -72,7 +72,7 @@ function AdminRecommandationPage() {
         onClick={handleGoBack}
         className={style.buttonGoBack}
       >
-        Revenir aux articles
+        Revenir en arrière
       </button>
     </section>
   );

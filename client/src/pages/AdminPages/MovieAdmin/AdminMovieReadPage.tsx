@@ -36,7 +36,7 @@ function AdminMovieReadPage() {
   };
   return (
     <section className={style.sectionMovieAdmin}>
-      <h1 className={style.titleMovieAdmin}>Liste des articles</h1>
+      <h1 className={style.titleMovieAdmin}>Liste des films</h1>
       <table className={style.movieTable}>
         <thead>
           <tr>

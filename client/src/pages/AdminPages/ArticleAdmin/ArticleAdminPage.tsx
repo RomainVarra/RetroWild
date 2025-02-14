@@ -12,6 +12,11 @@ function ArticleAdminPage() {
   const handleKeyUp = () => {
     "Press Enter";
   };
+
+  const handleGoBack = () => {
+    navigate("/admin/account");
+  };
+
   return (
     <section className={style.adminArticleSection}>
       <h1 className={style.adminArticleTitle}>Articles</h1>
@@ -31,6 +36,9 @@ function ArticleAdminPage() {
           Tous les articles
         </article>
       </div>
+      <button className={style.goBackBtn} type="button" onClick={handleGoBack}>
+        revenir en arrière
+      </button>
     </section>
   );
 }
