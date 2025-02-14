@@ -11,6 +11,9 @@ function NewsArticles() {
   const OneKeyUp = () => {
     "Press here to read the article";
   };
+  const handleAllArticles = () => {
+    navigate("/articles");
+  };
 
   useEffect(() => {
     setFirstArticle(mainArticle);
@@ -37,7 +40,11 @@ function NewsArticles() {
         </article>
       </section>
       <section className={style.articleLink}>
-        <button className={style.linkToAllArticles} type="button">
+        <button
+          className={style.linkToAllArticles}
+          type="button"
+          onClick={handleAllArticles}
+        >
           Retrouver tout nos articles
         </button>
       </section>

@@ -12,6 +12,9 @@ function NewsMovies() {
     "Press here to read the article";
   };
 
+  const handleAllMovies = () => {
+    navigate("/streaming");
+  };
   useEffect(() => {
     setNewMovie(LastMovies);
   }, []);
@@ -37,7 +40,11 @@ function NewsMovies() {
         </article>
       </section>
       <section className={style.movieLink}>
-        <button className={style.linkToAllMovies} type="button">
+        <button
+          className={style.linkToAllMovies}
+          type="button"
+          onClick={handleAllMovies}
+        >
           Retrouver tout nos films
         </button>
       </section>
