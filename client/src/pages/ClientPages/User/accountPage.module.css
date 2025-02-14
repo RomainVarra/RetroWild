@@ -1,0 +1,64 @@
+.accountSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.accountTitle {
+  position: relative;
+  text-align: center;
+  margin: 3em 0em;
+  font-size: 2.5em;
+}
+
+.accountTitle::before {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #ff4d5a;
+  width: 6em;
+  top: 4rem;
+}
+
+.accountPicture {
+  align-content: center;
+  justify-items: center;
+  width: 10em;
+}
+.accountPseudoTitle {
+  position: relative;
+  text-align: center;
+  font-size: 2.5em;
+  margin: 1em 0;
+  color: var(--primary-color);
+}
+
+.recommandationButton {
+  margin-bottom: 5em;
+  margin-top: 2em;
+  color: black;
+  border: none;
+  background-color: var(--tertiary-color);
+  font-size: 1.2em;
+  width: 9em;
+  height: 2em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.recommandationButton:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .accountArticle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    border: 3px solid var(--primary-color);
+    padding: 3em 3em 3em 3em;
+    border-radius: 20px;
+  }
+}

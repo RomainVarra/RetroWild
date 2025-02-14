@@ -13,7 +13,6 @@ const read: RequestHandler = async (req, res, next) => {
       res.json(movies);
     }
   } catch (err) {
-    // Pass any errors to the error-handling middleware
     next(err);
   }
 };
@@ -28,4 +27,39 @@ const browse: RequestHandler = async (req, res, next) => {
   }
 };
 
-export default { read, browse };
+const addMovie: RequestHandler = async (req, res, next) => {
+  try {
+    const newMovie = {
+      movie_title: req.body.movie_title,
+      release_year: Number(req.body.release_year),
+      director: req.body.director,
+      genre: req.body.genre,
+      duration: Number(req.body.duration),
+      language: req.body.language,
+      description: req.body.description,
+      poster_url: req.body.poster_url,
+      video_url: req.body.video_url,
+      rating: Number(req.body.rating),
+    };
+
+    const insertId = await MovieRepository.create(newMovie);
+
+    res.status(201).json({ insertId });
+  } catch (err) {
+    next(err);
+  }
+};
+
+const destroyMovie: RequestHandler = async (req, res, next) => {
+  try {
+    const movieId = Number(req.params.id);
+
+    await MovieRepository.delete(movieId);
+
+    res.sendStatus(204);
+  } catch (err) {
+    next(err);
+  }
+};
+
+export default { read, browse, addMovie, destroyMovie };

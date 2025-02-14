@@ -1,0 +1,26 @@
+.footerSection {
+  background-color: black;
+  color: white;
+  height: 6em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 1em;
+}
+
+.footerText {
+  font-size: 1.3em;
+  padding: 0 1em;
+}
+
+.footerIcone {
+  width: 3em;
+  height: 3em;
+  margin-left: 1em;
+  color: white;
+}
+
+.footerIcone:hover {
+  color: #a5a3a3;
+}

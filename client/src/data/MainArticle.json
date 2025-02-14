@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "article_title": "Metropolis (1927) : Une vision futuriste en avance sur son temps",
+    "published_date": "12 mars 2024",
+    "author": "Louis Ferrant",
+    "picture_article": "/Images/metropolis_article.jpg",
+    "first_title_section": "Un chef-d'œuvre du cinéma expressionniste",
+    "first_section": "Fritz Lang signe en 1927 avec Metropolis l’un des premiers grands films de science-fiction. Son univers dystopique met en scène une société ultra-hiérarchisée où les élites vivent dans le luxe tandis que les ouvriers triment sous terre. Le film suit Freder, fils du maître de la ville, et Maria, une ouvrière qui rêve d’unir les classes. Dès sa sortie, Metropolis impressionne par ses décors monumentaux et son message social fort. Inspiré du futurisme et du Bauhaus, il pose les bases de nombreux films de science-fiction à venir.",
+    "second_title_section": "Un film précurseur et intemporel",
+    "second_section": "Si Metropolis a connu un accueil mitigé à sa sortie, il est aujourd’hui considéré comme une œuvre incontournable. Sa restauration en 2010, incluant des scènes perdues, a redonné vie à sa vision originale. L’esthétique du film a influencé des œuvres comme Blade Runner ou Star Wars. Plus qu’un simple film muet, Metropolis reste une réflexion puissante sur la société et le progrès technologique."
+  },
+  {
+    "id": 2,
+    "article_title": "Le Salaire de la Peur (1953) : Une tension insoutenable sur les routes de l'enfer",
+    "published_date": "5 avril 2024",
+    "author": "Émile Durand",
+    "picture_article": "/Images/salaire_de_la_peur.jpg",
+    "first_title_section": "Le voyage infernal de Clouzot",
+    "first_section": "En 1953, Henri-Georges Clouzot signe Le Salaire de la Peur, un thriller haletant où quatre hommes doivent transporter un chargement de nitroglycérine à travers des routes accidentées d'Amérique latine. Yves Montand incarne Mario, un aventurier désespéré, tandis que Charles Vanel brille dans le rôle de Jo. Chaque cahot sur la route devient une menace de mort, et la mise en scène oppressante de Clouzot rend chaque minute insoutenable.",
+    "second_title_section": "Un suspense maîtrisé à la perfection",
+    "second_section": "Récompensé par la Palme d’Or à Cannes, le film est un modèle de tension dramatique. Son atmosphère étouffante et sa critique du capitalisme en font une œuvre engagée et universelle. Son remake américain, Sorcerer (1977) de William Friedkin, témoigne de son impact durable. Aujourd’hui encore, Le Salaire de la Peur reste un sommet du cinéma d’aventure et du thriller."
+  },
+  {
+    "id": 3,
+    "article_title": "Nosferatu (1922) : Le premier grand film de vampires",
+    "published_date": "30 octobre 2024",
+    "author": "Julien Martel",
+    "picture_article": "/Images/nosferatu_article.png",
+    "first_title_section": "Une adaptation officieuse de Dracula",
+    "first_section": "En 1922, F.W. Murnau réalise Nosferatu, inspiré de Dracula de Bram Stoker. Max Schreck incarne le terrifiant comte Orlok, un vampire à l’apparence cadavérique qui terrorise un petit village. Ce film muet, expressionniste et cauchemardesque, pose les bases de l’imagerie vampirique moderne. Ses jeux d’ombres et son atmosphère pesante en font une œuvre marquante du cinéma d’horreur.",
+    "second_title_section": "Un film maudit devenu culte",
+    "second_section": "À sa sortie, Nosferatu est attaqué en justice par la veuve de Stoker, qui exige la destruction des copies. Heureusement, certaines ont survécu, permettant au film d’atteindre son statut culte. Aujourd’hui, son influence est indéniable, de Dracula (1931) à Shadow of the Vampire (2000), qui imagine le tournage du film. Plus d’un siècle après, Nosferatu fascine toujours par son ambiance unique."
+  },
+  {
+    "id": 4,
+    "article_title": "Les Temps Modernes (1936) : La machine contre l’homme",
+    "published_date": "15 juillet 2024",
+    "author": "Clara Morel",
+    "picture_article": "/Images/temps_modernes.jpg",
+    "first_title_section": "Chaplin face à l’industrialisation",
+    "first_section": "En 1936, Charlie Chaplin livre Les Temps Modernes, une satire mordante du monde industriel et de ses dérives. Il incarne Charlot, un ouvrier broyé par la cadence infernale des machines. Entre burlesque et critique sociale, le film alterne scènes hilarantes (la machine à nourrir automatique) et moments poignants.",
+    "second_title_section": "Un message universel toujours d’actualité",
+    "second_section": "Bien que tourné à l’aube du cinéma parlant, Les Temps Modernes reste en grande partie muet, fidèle au style de Chaplin. Le film dénonce la déshumanisation du travail et l’aliénation de l’homme par la machine, un sujet toujours pertinent. Son humanisme et son humour en font un classique indémodable, à redécouvrir sans modération."
+  },
+  {
+    "id": 5,
+    "article_title": "L’Aurore (1927) : Une romance tragique inoubliable",
+    "published_date": "20 novembre 2024",
+    "author": "Sophie Lemoine",
+    "picture_article": "/Images/l_aurore.webp",
+    "first_title_section": "L’un des plus grands films muets de l’histoire",
+    "first_section": "Réalisé par F.W. Murnau en 1927, L’Aurore (Sunrise) raconte l’histoire d’un paysan manipulé par une femme fatale qui l’incite à tuer son épouse. Pris de remords, il tente de se racheter dans un récit à la fois sombre et lumineux. Murnau utilise une mise en scène révolutionnaire, avec des mouvements de caméra fluides et une photographie époustouflante.",
+    "second_title_section": "Un chef-d'œuvre visuel et émotionnel",
+    "second_section": "Premier film de Murnau tourné à Hollywood, L’Aurore a marqué le cinéma par sa poésie visuelle et sa narration émotionnelle. Il remporta un Oscar lors de la première cérémonie des Academy Awards. Aujourd’hui, il est toujours considéré comme l’un des plus grands films muets jamais réalisés."
+  }
+]

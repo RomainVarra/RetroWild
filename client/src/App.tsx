@@ -1,37 +1,38 @@
-import { useEffect, useState } from "react";
+import { Outlet } from "react-router-dom";
 import "./App.css";
-import { useNavigate } from "react-router-dom";
-import type { MovieType } from "./types/movie.type";
+import { Bounce, ToastContainer } from "react-toastify";
+import NavBar from "./components/NavBar/NavBar";
+import AuthProvider from "./contexts/AuthContext";
+import Footer from "./pages/ClientPages/Footer/Footer";
 
 function App() {
-  const [movie, setMovie] = useState<MovieType[]>([]);
-  const VITE_API_URL = import.meta.env.VITE_API_URL;
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    fetch(`${VITE_API_URL}/api/movie`)
-      .then((response) => response.json())
-      .then((data) => setMovie(data))
-      .catch((error) => console.error(error));
-  }, []);
   return (
     <>
-      <h1> retro Wild</h1>
-      <div>
-        {movie.map((m) => (
-          <section key={m.id}>
-            <h1>{m.title}</h1>
-            <img src={m.poster_url} alt={`affiche de ${m.title}`} />
-            <span>{m.release_year}</span>
-            <span>{m.genre}</span>
-            <button type="button" onClick={() => navigate(`/movie/${m.id}`)}>
-              Lien vers le film
-            </button>
-          </section>
-        ))}
-      </div>
+      <AuthProvider>
+        <header>
+          <NavBar />
+        </header>
+        <main>
+          <Outlet />
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick={false}
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="dark"
+            transition={Bounce}
+          />
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </AuthProvider>
     </>
   );
 }
-
 export default App;

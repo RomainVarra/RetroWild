@@ -1,0 +1,19 @@
+.recommandationSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mainTitleRecommandation {
+  position: relative;
+  text-align: center;
+  margin: 3em 0em;
+  font-size: 2.5em;
+  color: var(--primary-color);
+}
+
+.recommandationText {
+  padding: 0 5em 0 5em;
+  font-size: 1.3em;
+  margin-bottom: 3em;
+}

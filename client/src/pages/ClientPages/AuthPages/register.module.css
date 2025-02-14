@@ -1,0 +1,37 @@
+.registerSection,
+.loginSection {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3em;
+}
+
+.registerTitle {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 3em;
+}
+
+.loginTitle {
+  position: relative;
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 3em;
+}
+.registerTitle::before {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #ff4d5a;
+  width: 9em;
+  transform: translateX(-10%);
+  top: 4rem;
+}
+
+.loginTitle::before {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #ff4d5a;
+  width: 7em;
+  transform: translateX(-10%);
+  top: 4rem;
+}

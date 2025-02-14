@@ -1,0 +1,106 @@
+.homePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainTitle {
+  position: relative;
+  text-align: center;
+  margin: 3em 0em;
+  font-size: 2.5em;
+}
+
+.mainTitle::before {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #ff4d5a;
+  width: 26rem;
+  left: 2rem;
+  top: 3rem;
+}
+
+.moviePictures {
+  width: 80%;
+  align-content: center;
+  margin-bottom: 5em;
+}
+.whatIsRetroWildTitle {
+  color: var(--primary-color);
+  font-size: 2em;
+  margin-bottom: 3em;
+  padding: 0 1.5em;
+}
+.whatIsRetroWildSection {
+  padding: 0 4em 4em 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  font-size: 1.3em;
+}
+
+.topTitle {
+  font-size: 2em;
+  padding: 0 0 2em 2em;
+  position: relative;
+  margin-top: 3em;
+}
+
+.topTitle::before {
+  position: absolute;
+  content: "";
+  border-bottom: 8px solid #ff4d5a;
+  width: 5em;
+  top: 3rem;
+}
+.topSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 1em 4em 1em;
+}
+.topArticle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 2em;
+  padding: 1em 1em;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+}
+
+.topPicture {
+  width: 15em;
+  padding: 1em 2em;
+  border-radius: 50%;
+}
+
+.topText {
+  font-size: 1.5em;
+}
+
+.topButton {
+  background-color: #f8e16c;
+  width: 11em;
+  height: 2.2em;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.topButton:hover {
+  background-color: var(--primary-color);
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .mainTitle::before {
+    display: none;
+  }
+}

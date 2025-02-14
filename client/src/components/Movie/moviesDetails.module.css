@@ -1,0 +1,100 @@
+.movieSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.movieTitle {
+  text-align: center;
+  padding: 1em 0;
+  color: var(--primary-color);
+}
+.imgSection {
+  display: flex;
+  justify-content: center;
+}
+
+.moviePicture {
+  width: 14em;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.technicalPaper {
+  display: flex;
+  flex-direction: column;
+}
+.directorSpan,
+.yearSpan,
+.durationSpan {
+  display: block;
+}
+.movieRatingSection {
+  margin: 1em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.movieRating {
+  font-size: 2em;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  padding: 0.5em 0.5em;
+}
+.movieInformation {
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1em;
+  gap: 1em;
+}
+.movieSynopsisSection {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  margin: 1em 1em;
+}
+.movieSynopsisTitle {
+  font-weight: bold;
+  padding: 1em 1em;
+}
+.movieSynopsis {
+  padding: 1em 3em;
+}
+.player {
+  margin: 3em 0;
+  display: flex;
+  justify-content: center;
+  width: 84em;
+  height: 30em;
+  max-width: 90%;
+}
+
+@media (min-width: 992px) {
+  .movieTechnicalInformation {
+    display: flex;
+    flex-direction: row;
+    padding: 5em 5em;
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .movieSynopsisTitle {
+    font-size: 1.5em;
+  }
+  .movieTitle {
+    font-size: 5em;
+  }
+  .movieSynopsis {
+    padding: 0 3em;
+    font-size: 1.5em;
+  }
+  .moviePicture {
+    margin-right: 1em;
+    width: 20em;
+  }
+}

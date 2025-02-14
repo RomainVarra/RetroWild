@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "movie_title": "Steamboat Willie",
+    "release_year": 1928,
+    "director": "Walt Disney",
+    "genre": "Dessin Animé",
+    "duration": 8,
+    "language": "Muet",
+    "description": "Steamboat Willie est un court-métrage d'animation emblématique mettant en scène Mickey Mouse. Il marque les débuts sonores du personnage.",
+    "poster_url": "https://thewaltdisneycompany.com/app/uploads/2023/11/1920_51-107_720-614x491.jpg",
+    "video_url": "https://www.youtube.com/watch?v=BBgghnQF6E4",
+    "rating": 7.5
+  },
+  {
+    "id": 2,
+    "movie_title": "Nosferatu",
+    "release_year": 1922,
+    "director": "F.W. Murnau",
+    "genre": "Horreur",
+    "duration": 94,
+    "language": "Muet",
+    "description": "Nosferatu est une adaptation non officielle de 'Dracula'. Ce chef-d'œuvre du cinéma expressionniste raconte l'histoire du comte Orlok, un vampire terrifiant.",
+    "poster_url": "https://www.lafilmotheque.fr/v3/content/uploads/2019/10/Nosferatu-480x640.jpg",
+    "video_url": "https://www.youtube.com/watch?v=dCT1YUtNOA8",
+    "rating": 8.0
+  },
+  {
+    "id": 3,
+    "movie_title": "Le Kid",
+    "release_year": 1921,
+    "director": "Charlie Chaplin",
+    "genre": "Comédie dramatique",
+    "duration": 68,
+    "language": "Muet",
+    "description": "Un vagabond adopte un enfant abandonné et tente de l’élever malgré la pauvreté. Un chef-d'œuvre mêlant humour et émotion signé Charlie Chaplin.",
+    "poster_url": "https://www.cinemaffiche.fr/5573/le-kid-titre-original-the-kid.jpg",
+    "video_url": "https://www.youtube.com/watch?v=0wg7QjQztlk",
+    "rating": 8.1
+  },
+  {
+    "id": 4,
+    "movie_title": "Metropolis",
+    "release_year": 1927,
+    "director": "Fritz Lang",
+    "genre": "Science-fiction",
+    "duration": 153,
+    "language": "Muet",
+    "description": "Metropolis est un film de science-fiction visionnaire décrivant une ville futuriste divisée entre les riches et les ouvriers opprimés.",
+    "poster_url": "https://m.media-amazon.com/images/M/MV5BMjhjMGYyMjAtMzJkYy00NzhlLWIwY2MtMWQ2ODIxZDUyOGYyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    "video_url": "https://www.youtube.com/watch?v=X-S5v4UwhAE&t=6456s",
+    "rating": 8.7
+  }
+]

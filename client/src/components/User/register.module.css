@@ -1,0 +1,56 @@
+.formRegister {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionRegister {
+  border: 3px solid #ff4d5a;
+  padding: 1em 1em 1em 1em;
+  border-radius: 10px;
+}
+
+.pseudoLabel,
+.photoLabel,
+.emailLabel,
+.passwordLabel,
+.confirmPasswordLabel {
+  display: block;
+  color: #ff4d5a;
+  font-size: 1.2em;
+}
+.pseudoInput,
+.emailInput,
+.photoInput,
+.passwordInput,
+.confirmPasswordInput {
+  margin: 1em 0;
+  display: block;
+  font-size: 1em;
+  color: black;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.9em;
+  display: block;
+}
+
+.submitButton {
+  margin-bottom: 5em;
+  margin-top: 2em;
+  color: black;
+  border: none;
+  background-color: var(--tertiary-color);
+  font-size: 1.2em;
+  width: 7em;
+  height: 2em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: var(--primary-color);
+  color: white;
+}

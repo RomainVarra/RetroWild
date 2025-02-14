@@ -1,0 +1,44 @@
+:root {
+  --primary-color: #ff4d5a;
+  --secondary-color: #1a1a2e;
+  --tertiary-color: #f8e16c;
+}
+@font-face {
+  font-family: "Exo2";
+  src: url("/assets/fonts/Exo2-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "BarlowCondensed";
+  src: url("/assets/fonts/BarlowCondensed-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/assets/fonts/Rubik-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+main {
+  font-family: "Rubik", sans-serif;
+  background-color: var(--secondary-color);
+}
+h1,
+h2 {
+  font-family: "Exo2", sans-serif;
+}
+
+h3,
+h4 {
+  font-family: "BarlowCondensed", sans-serif;
+}
