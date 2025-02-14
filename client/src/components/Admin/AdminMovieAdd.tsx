@@ -277,7 +277,7 @@ function AdminMovieAdd({ onSubmit }: AdminFormMovieType) {
           </label>
         </section>
         <button type="submit" className={style.submitButton}>
-          Ajouter l'article
+          Ajouter le film
         </button>
       </form>
       <button type="button" className={style.goBackBtn} onClick={handleGoBack}>
