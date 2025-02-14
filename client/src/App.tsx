@@ -3,6 +3,7 @@ import "./App.css";
 import { Bounce, ToastContainer } from "react-toastify";
 import NavBar from "./components/NavBar/NavBar";
 import AuthProvider from "./contexts/AuthContext";
+import Footer from "./pages/ClientPages/Footer/Footer";
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
             transition={Bounce}
           />
         </main>
+        <footer>
+          <Footer />
+        </footer>
       </AuthProvider>
     </>
   );
